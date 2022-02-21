@@ -17,6 +17,7 @@
 
 .BannerContent{
     padding: 20px 20px 50px;
+    box-sizing: border-box;
 }
 
 .BannerCarousel{
@@ -49,12 +50,26 @@
 }
 
 .BannerItem{
+    width: calc(100vw - 40px);
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.BannerCloneItem{
+    width: calc(100vw - 40px);
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
 }
 
 .BannerItem a{
+    position: relative;
+    display: block;
+    overflow: hidden;
+}
+
+.BannerCloneItem a{
     position: relative;
     display: block;
     overflow: hidden;
