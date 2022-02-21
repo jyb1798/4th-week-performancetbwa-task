@@ -1,4 +1,3 @@
-/* 이미지 섹션*/
 .Image .ImageContent {
   display: flex;
   align-items: center;
@@ -21,30 +20,38 @@
   padding: 10px 14px;
   cursor: pointer;
   border-radius: 40px;
+  margin-right: 4px;
+  margin-bottom: 2px;
 }
 
 .Image .ImageBtnGroup button:first-child {
-  border: 3px solid purple;
+  border: 1px solid #a27fde;
+  color: #a27fde;
 }
 
 .Image .ImageBtnGroup button:nth-child(2) {
-  border: 3px solid green;
+  border: 1px solid #46cfa7;
+  color: #46cfa7;
 }
 
 .Image .ImageBtnGroup button:nth-child(3) {
-  border: 3px solid orange;
+  border: 1px solid #ffa04d;
+  color: #ffa04d;
 }
 
 .Image .ImageBtnGroup button:nth-child(4) {
-  border: 3px solid blue;
+  border: 1px solid #68a4fe;
+  color: #68a4fe;
 }
 
 .Image .ImageBtnGroup button:nth-child(5) {
-  border: 3px solid yellow;
+  border: 1px solid #ffcd32;
+  color: #ffcd32;
 }
 
 .Image .ImageBtnGroup button:last-child {
-  border: 3px solid skyblue;
+  border: 1px solid #00afe3;
+  color: #00afe3;
 }
 
 .Image .ImageTitle {
