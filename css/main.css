@@ -1,4 +1,13 @@
 /* 이미지 섹션*/
+.Image .ImageWrapper {
+  position: relative;
+}
+
+.Image .ImageText {
+  position: absolute;
+  top: 450px;
+  left: 10px;
+}
 
 .Image .ImageTitle {
   font-size: 22px;
@@ -12,13 +21,12 @@
   margin-left: 50px;
 }
 
-.Image .ImagItemLine {
-  margin: 10px;
-  height: 5px;
-  width: 700px;
+.Image .ImageItemLine {
+  margin: 10px 0;
+  width: 100%;
   border-bottom: 1px solid lightgray;
 }
 
-.Image .ImagItemContainer {
+.Image .ImageItemContainer {
   display: flex;
 }
