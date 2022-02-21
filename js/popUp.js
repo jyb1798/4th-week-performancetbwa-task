@@ -5,29 +5,31 @@ var popUpDot = document.querySelectorAll(".popUpDot > a");
 var popUpSlideAnchor = document.querySelectorAll(".popUpSlide > a");
 var slideIndex = 0;
 var slide;
-var isStop = false;
 
 popUpSlide.appendChild(popUpSlideAnchor[0].cloneNode(true));
-popUpSlide.insertBefore(popUpSlideAnchor[2].cloneNode(true),popUpSlide.firstElementChild);
+// popUpSlide.insertBefore(popUpSlideAnchor[2].cloneNode(true),popUpSlide.firstElementChild);
 
 closeBtn.addEventListener("click", function () {
   popUp.style.display = "none";
 });
 
+
 function handleSlideStart() {
   slide = setInterval(function () {
+    popUpSlide.style.transition = "transform 1s ease-in-out";
     popUpSlide.style.transform = "translateX(" + -1 * 360 * slideIndex + "px)";
     slideIndex++;
     if (slideIndex === 4) {
       setTimeout(function () {
+        popUpSlide.style.transition = "none";
         popUpSlide.style.transform =
-          "translateX(" + -1 * 360 * slideIndex + "px)";
-      }, 1000);
-      // popUpSlide.style.transform = "translateX(0px)";
-      // popUpSlide.style.transition = "transform 1s ease-in-out";
-      slideIndex = -1;
+        "translateX(0px)";
+        handleSlideStart();
+      }, 900);
+      handleSlideStop();
+      slideIndex = 0;
     }
-  }, 1000);
+  }, 3000);
 }
 
 function handleSlideStop() {

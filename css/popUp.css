@@ -33,7 +33,7 @@
   position: relative;
   transition-duration: 0s;
   transform: translateX(0px);
-  transition: transform 0.5s ease-in-out;
+  transition: transform 1s ease-in-out;
 }
 
 .popUpSlide a {
@@ -64,6 +64,7 @@
   background-color: #bdbdbd;
   text-indent: -9999px;
   outline: 0;
+  cursor: pointer;
   border-radius: 6px;
 }
 
