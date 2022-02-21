@@ -254,7 +254,7 @@ address {
   height: 63px;
   background-size: 1252px 845px;
   background-position: 0 -612px;
-  display: none;
+  display: block;
 }
 
 .FooterAbout dd {
@@ -297,18 +297,14 @@ address {
   margin: 0 0 0 25px;
 }
 
-@media (min-width: 1024px) and (max-width: 1140px) {
-
+@media (max-width: 1140px) {
+  
   .FooterLogo {
-    display: block;
+    display: none;
   }
 }
 
 @media (max-width: 1024px) {
-
-  /* .Footer{
-    min-height: 417px;
-  } */
 
   .FooterWarp {
     max-width: 1212px;
