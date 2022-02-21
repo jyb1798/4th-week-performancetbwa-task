@@ -9,6 +9,38 @@
   left: 10px;
 }
 
+.Image .ImageBtnGroup button {
+  background-color: white;
+  margin: 5px;
+  padding: 10px 14px;
+  cursor: pointer;
+  border-radius: 40px;
+}
+
+.Image .ImageBtnGroup button:first-child {
+  border: 3px solid purple;
+}
+
+.Image .ImageBtnGroup button:nth-child(2) {
+  border: 3px solid green;
+}
+
+.Image .ImageBtnGroup button:nth-child(3) {
+  border: 3px solid orange;
+}
+
+.Image .ImageBtnGroup button:nth-child(4) {
+  border: 3px solid blue;
+}
+
+.Image .ImageBtnGroup button:nth-child(5) {
+  border: 3px solid yellow;
+}
+
+.Image .ImageBtnGroup button:last-child {
+  border: 3px solid skyblue;
+}
+
 .Image .ImageTitle {
   font-size: 22px;
   line-height: 34px;
