@@ -1,0 +1,24 @@
+/* 이미지 섹션*/
+
+.Image .ImageTitle {
+  font-size: 22px;
+  line-height: 34px;
+  font-weight: 300;
+}
+
+.Image .ImageContent {
+  display: flex;
+  align-items: center;
+  margin-left: 50px;
+}
+
+.Image .ImagItemLine {
+  margin: 10px;
+  height: 5px;
+  width: 700px;
+  border-bottom: 1px solid lightgray;
+}
+
+.Image .ImagItemContainer {
+  display: flex;
+}
