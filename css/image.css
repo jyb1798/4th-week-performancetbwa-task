@@ -1,9 +1,15 @@
 /* 이미지 섹션*/
+.Image .ImageContent {
+  display: flex;
+  align-items: center;
+  margin-left: 50px;
+}
+
 .Image .ImageWrapper {
   position: relative;
 }
 
-.Image .ImageText {
+.Image .ImageWrapper .ImageText {
   position: absolute;
   top: 450px;
   left: 10px;
@@ -45,12 +51,6 @@
   font-size: 22px;
   line-height: 34px;
   font-weight: 300;
-}
-
-.Image .ImageContent {
-  display: flex;
-  align-items: center;
-  margin-left: 50px;
 }
 
 .Image .ImageItemLine {
