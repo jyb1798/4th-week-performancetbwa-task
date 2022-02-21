@@ -242,7 +242,6 @@ address {
   border-top: none;
   letter-spacing: -0px;
   outline-width: 1px;
-  font-weight: 300;
 }
 
 .FooterLogo {
@@ -261,7 +260,7 @@ address {
   margin-right: 18px;
   font-size: 14px;
   line-height: 25px;
-  font-weight: 300;
+  font-weight: 600;
   letter-spacing: -0.21px;
   position: relative;
   display: inline-block;
