@@ -298,14 +298,12 @@ address {
 }
 
 @media (max-width: 1140px) {
-  
   .FooterLogo {
     display: none;
   }
 }
 
 @media (max-width: 1024px) {
-
   .FooterWarp {
     max-width: 1212px;
     padding: 0 10px;
@@ -378,7 +376,7 @@ address {
     position: relative;
     margin: 0 20px;
     padding: 50px 0;
-}
+  }
 
   .FooterContact {
     float: none;
@@ -417,29 +415,28 @@ address {
     display: block;
   }
 
-  .FooterAbout{
+  .FooterAbout {
     margin-top: 15px;
   }
 
-  .FooterAbout dd{
+  .FooterAbout dd {
     margin-right: 14px;
     font-size: 11px;
     line-height: 19px;
     font-weight: 300;
-    letter-spacing: -.17px;
+    letter-spacing: -0.17px;
   }
 
-  .FooterAbout
-  dd:not(.FooterAbout dd:nth-child(10)):before {
-  content: "";
-  display: block;
-  position: absolute;
-  top: 6px;
-  right: -10px;
-  width: 1px;
-  height: 13px;
-  background: #d3d3d3;
-}
+  .FooterAbout dd:not(.FooterAbout dd:nth-child(10)):before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 6px;
+    right: -10px;
+    width: 1px;
+    height: 13px;
+    background: #d3d3d3;
+  }
 
   .FooterBr {
     display: none;
@@ -447,17 +444,17 @@ address {
     border-top: #787878 1px solid;
   }
 
-  .FooterTems{
+  .FooterTems {
     position: initial;
     margin-top: 30px;
   }
 
-  .FooterTems a{
-    margin:0;
+  .FooterTems a {
+    margin: 0;
     font-size: 12px;
   }
 
-  .FooterTems a:not(.FooterTems a:nth-child(1)){
-    margin:0 0 0 30px;
+  .FooterTems a:not(.FooterTems a:nth-child(1)) {
+    margin: 0 0 0 30px;
   }
 }
