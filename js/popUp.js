@@ -96,10 +96,8 @@ function handleSlideStart() {
         popUpSlide.style.OTransform = "translateX(0px)";
         popUpSlide.style.msTransform = "translateX(0px)";
         popUpSlide.style.transform = "translateX(0px)";
-        handleSlideStart();
       }, 1000);
-      handleSlideStop();
-      slideIndex = 0;
+      slideIndex = 1;
     }
   }, 3000);
 }
@@ -117,6 +115,7 @@ popUpDot.forEach(function (el) {
   if (el.addEventListener) {
     el.addEventListener("click", function () {
       handleSlideStop();
+      popUpSlide.style.transition = "transform 1s ease-in-out";
       popUpSlide.style.transform = "translateX(" + el.dataset.slideIndex * -1 * 360 + "px)";
       popUpSlide.style.webKitTransform = "translateX(" + el.dataset.slideIndex * -1 * 360 + "px)";
       popUpSlide.style.MozTransform = "translateX(" + el.dataset.slideIndex * -1 * 360 + "px)";
@@ -126,11 +125,12 @@ popUpDot.forEach(function (el) {
       Array.from(popUpDot).forEach(function(el){
         el.style.backgroundColor = el.dataset.slideIndex === String(slideIndex) ? 'red':'#bdbdbd' ;
       })
-      setTimeout(handleSlideStart(), 5000);
+      setTimeout(handleSlideStart(), 3000);
     });
   } else {
     el.attachEvent("onclick", function () {
       handleSlideStop();
+      popUpSlide.style.transition = "transform 1s ease-in-out";
       popUpSlide.style.transform = "translateX(" + el.dataset.slideIndex * -1 * 360 + "px)";
       popUpSlide.style.webKitTransform = "translateX(" + el.dataset.slideIndex * -1 * 360 + "px)";
       popUpSlide.style.MozTransform = "translateX(" + el.dataset.slideIndex * -1 * 360 + "px)";
@@ -140,7 +140,7 @@ popUpDot.forEach(function (el) {
       Array.from(popUpDot).forEach(function(el){
         el.style.backgroundColor = el.dataset.slideIndex === String(slideIndex) ? 'red':'#bdbdbd' ;
       })
-      setTimeout(handleSlideStart(), 5000);
+      setTimeout(handleSlideStart(), 3000);
     });
   }
 });
