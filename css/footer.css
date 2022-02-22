@@ -14,6 +14,15 @@ address {
 
 .FooterMobileNav {
   display: none;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: 2;
+  background-color: #fff;
+}
+
+.isFooter {
   position: relative;
   bottom: initial;
   left: initial;
@@ -353,7 +362,6 @@ address {
     padding: 0;
     margin: 0;
     border: none;
-    background: 0 0;
     outline: 0;
     cursor: pointer;
     float: left;
@@ -379,7 +387,7 @@ address {
     content: "";
     background: url(https://kukka-2-media-123.s3.amazonaws.com/static/kukkart_new/img/sprite/kukka.png);
     filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='url(https://kukka-2-media-123.s3.amazonaws.com/static/kukkart_new/img/sprite/kukka.png)', sizingMethod='scale');
-  -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='url(https://kukka-2-media-123.s3.amazonaws.com/static/kukkart_new/img/sprite/kukka.png)', sizingMethod='scale')";
+    -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='url(https://kukka-2-media-123.s3.amazonaws.com/static/kukkart_new/img/sprite/kukka.png)', sizingMethod='scale')";
     width: 24px;
     height: 24px;
     display: block;
