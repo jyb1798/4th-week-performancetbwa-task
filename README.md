@@ -117,7 +117,8 @@ $ git clone https://github.com/PreOnboardingTeam-16/4th-week-performancetbwa-tas
 `IE8` 이하에서는 `addEventListener` 리스너가 동작하지 않았기 때문에, 대신에 `attachEvent`를 사용하였습니다.
 
 ```js
-  element.addEventListener ? element.addEventListener('click',function(){...}) : element.attachEvent('onclick',function(){...})
+  if(element.addEventListener) element.addEventListener('click',function(){...})
+  else element.attachEvent('onclick',function(){...})
 ```
 
 #### NodeList.prototype.forEach
