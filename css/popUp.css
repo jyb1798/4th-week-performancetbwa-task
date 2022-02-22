@@ -117,5 +117,7 @@
   height: 20px;
   background: url(https://www.welrixrental.co.kr/img/icon/close-w.png) no-repeat;
   background-size: 100%;
+  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='url(https://kukka-2-media-123.s3.amazonaws.com/static/kukkart_new/img/sprite/kukka.png)', sizingMethod='scale');
+  -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='url(https://kukka-2-media-123.s3.amazonaws.com/static/kukkart_new/img/sprite/kukka.png)', sizingMethod='scale')";
   cursor: pointer;
 }

@@ -132,7 +132,7 @@ address {
   margin-left: 20px;
 }
 
-.FooterSns a::before {
+.FooterSns a:before {
   content: "";
   background-image: url(https://kukka-2-media-123.s3.amazonaws.com/static/kukkart_new/img/sprite/kukka.png);
   filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='url(https://kukka-2-media-123.s3.amazonaws.com/static/kukkart_new/img/sprite/kukka.png)', sizingMethod='scale');
@@ -155,7 +155,7 @@ address {
   background-position: -1164px -685px;
 }
 
-.FooterSns::after {
+.FooterSns:after {
   content: "";
   display: block;
   clear: both;
@@ -276,7 +276,7 @@ address {
 
 .FooterAbout dd {
   margin-right: 18px;
-  font-size: 14px;
+  font-size: 14px; 
   line-height: 25px;
   font-weight: 600;
   letter-spacing: -0.21px;
@@ -362,7 +362,7 @@ address {
     height: 44px;
   }
 
-  .FooterSns a::before {
+  .FooterSns a:before {
     content: "";
     display: block;
     background-size: 626px 422.5px;
@@ -376,7 +376,7 @@ address {
     margin-left: 0;
   }
 
-  .FooterSns a::before {
+  .FooterSns a:before {
     content: "";
     background-image: url(https://kukka-2-media-123.s3.amazonaws.com/static/kukkart_new/img/sprite/kukka.png);
     filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='url(https://kukka-2-media-123.s3.amazonaws.com/static/kukkart_new/img/sprite/kukka.png)', sizingMethod='scale');
