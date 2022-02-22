@@ -1,3 +1,7 @@
+if (window.NodeList && !NodeList.prototype.forEach) {
+  NodeList.prototype.forEach = Array.prototype.forEach;
+}
+
 var popUp = document.querySelector(".popUp");
 var closeBtn = document.querySelector(".popUpCloseBtn");
 var popUpSlide = document.querySelector(".popUpSlide");
@@ -82,7 +86,7 @@ function handleSlideStart() {
     popUpSlide.style.MozTransform = "translateX(" + -1 * 360 * slideIndex + "px)";
     popUpSlide.style.OTransform = "translateX(" + -1 * 360 * slideIndex + "px)";
     popUpSlide.style.msTransform = "translateX(" + -1 * 360 * slideIndex + "px)";
-    Array.from(popUpDot).forEach(function(el){
+    popUpDot.forEach(function(el){
       el.style.backgroundColor = el.dataset.slideIndex === String(slideIndex) ? 'red':'#bdbdbd' ;
     })
     slideIndex++;
@@ -122,7 +126,7 @@ popUpDot.forEach(function (el) {
       popUpSlide.style.OTransform = "translateX(" + el.dataset.slideIndex * -1 * 360 + "px)";
       popUpSlide.style.msTransform = "translateX(" + el.dataset.slideIndex * -1 * 360 + "px)";
       slideIndex = el.dataset.slideIndex;
-      Array.from(popUpDot).forEach(function(el){
+      popUpDot.forEach(function(el){
         el.style.backgroundColor = el.dataset.slideIndex === String(slideIndex) ? 'red':'#bdbdbd' ;
       })
       setTimeout(handleSlideStart(), 3000);
@@ -137,7 +141,7 @@ popUpDot.forEach(function (el) {
       popUpSlide.style.OTransform = "translateX(" + el.dataset.slideIndex * -1 * 360 + "px)";
       popUpSlide.style.msTransform = "translateX(" + el.dataset.slideIndex * -1 * 360 + "px)";
       slideIndex = el.dataset.slideIndex;
-      Array.from(popUpDot).forEach(function(el){
+      popUpDot.forEach(function(el){
         el.style.backgroundColor = el.dataset.slideIndex === String(slideIndex) ? 'red':'#bdbdbd' ;
       })
       setTimeout(handleSlideStart(), 3000);
