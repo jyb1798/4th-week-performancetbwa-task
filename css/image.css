@@ -74,6 +74,27 @@
   transform: scale(1.15);
 }
 
+@media (max-width: 280px) {
+  .ImageBtnGroup button {
+    display: none;
+  }
+  .ImageInbox .ImageHead .ImageTitle {
+    font-size: 11px;
+    line-height: 10px;
+    font-weight: 300;
+    margin: 10px 0;
+  }
+
+  .Image .ImageWrap {
+    width: 100%;
+    max-width: 1240px;
+    height: 400px;
+    margin: 0 auto;
+    padding: 0 60px;
+    line-height: 16px;
+  }
+}
+
 @media (max-width: 767px) {
   .ImageWrapper {
     width: 100%;
@@ -131,28 +152,28 @@
   .ImageButtonGroup .ImagePrevButton {
     position: absolute;
     top: 50%;
-    left: -20%;
+    left: -15%;
     border-radius: 100%;
     box-shadow: 0px 8px 15px rgb(0 0 0 / 10%);
     cursor: pointer;
     background-color: transparent;
     z-index: 999;
-    width: 40px;
-    height: 40px;
+    width: 30px;
+    height: 30px;
     border-color: transparent;
   }
 
   .ImageButtonGroup .ImageNextButton {
     position: absolute;
     top: 50%;
-    right: -20%;
+    right: -15%;
     border-radius: 100%;
     box-shadow: 0px 8px 15px rgb(0 0 0 / 10%);
     cursor: pointer;
     background-color: transparent;
     z-index: 999;
-    width: 40px;
-    height: 40px;
+    width: 30px;
+    height: 30px;
     border-color: transparent;
   }
 }
@@ -244,28 +265,28 @@
 .ImagePrevButton {
   position: absolute;
   top: 50%;
-  left: -10%;
+  left: -5%;
   border-radius: 100%;
   box-shadow: 0px 8px 15px rgb(0 0 0 / 10%);
   cursor: pointer;
   background-color: transparent;
   z-index: 999;
-  width: 80px;
-  height: 80px;
+  width: 70px;
+  height: 70px;
   border-color: transparent;
 }
 
 .ImageNextButton {
   position: absolute;
   top: 50%;
-  right: -10%;
+  right: -5%;
   border-radius: 100%;
   box-shadow: 0px 8px 15px rgb(0 0 0 / 10%);
   cursor: pointer;
   background-color: transparent;
   z-index: 999;
-  width: 80px;
-  height: 80px;
+  width: 70px;
+  height: 70px;
   border-color: transparent;
 }
 
