@@ -103,9 +103,3 @@
 .ImageItemContainer {
   display: flex;
 }
-
-.ImageSubnumberone,
-.ImageSubnumbertwo {
-  width: 40%;
-  height: 40%;
-}
