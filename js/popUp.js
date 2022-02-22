@@ -64,7 +64,10 @@ if (closeBtn.addEventListener) {
 // 팝업 닫기 끝
 
 // 슬라이드 이벤트
-popUpSlide.appendChild(popUpSlideAnchor[0].cloneNode(true));
+
+var firstNode = popUpSlideAnchor[0].cloneNode(true)
+
+popUpSlide.appendChild(firstNode);
 
 function handleSlideStart() {
   slide = setInterval(function () {
@@ -75,11 +78,12 @@ function handleSlideStart() {
     })
     slideIndex++;
     if (slideIndex === 4) {
+      popUpDot[0].style.backgroundColor = 'red'
       setTimeout(function () {
         popUpSlide.style.transition = "none";
         popUpSlide.style.transform = "translateX(0px)";
         handleSlideStart();
-      }, 900);
+      }, 1000);
       handleSlideStop();
       slideIndex = 0;
     }
