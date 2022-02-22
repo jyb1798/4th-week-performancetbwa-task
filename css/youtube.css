@@ -7,9 +7,9 @@
   position: relative;
   margin: 0 auto;
   padding: 0 60px;
-  max-width: 1240px;
-  width: 100%;
-  /* -webkit-text-size-adjust: 100%; */
+  max-width: 1200px;
+  width: auto;
+  -webkit-text-size-adjust: 100%;
 }
 
 .YoutubeInner {
