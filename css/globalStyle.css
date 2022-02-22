@@ -86,11 +86,6 @@ video {
   font: inherit;
   vertical-align: baseline;
 }
-
-header,section,nav,footer {
-  display: block;
-}
-
 article,
 aside,
 details,
