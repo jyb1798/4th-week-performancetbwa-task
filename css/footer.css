@@ -226,6 +226,7 @@ address {
   padding: 0 20px;
   border: #9b9b9b 1px solid;
   border-radius: 18px;
+  behavior: url( "PIE.htc" );
   cursor: pointer;
   line-height: 36px;
   font-weight: 300;
