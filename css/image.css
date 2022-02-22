@@ -3,12 +3,13 @@
   color: #222;
 }
 .HeaderWrapper {
-  max-width: 1024px;
+  max-width: 1200px;
   margin: 0 auto;
 }
+
 .ImageWrap {
-  width: 100%;
-  max-width: 1240px;
+  width: auto;
+  max-width: 1200px;
   height: 700px;
   margin: 0 auto;
   padding: 0 60px;
@@ -25,7 +26,7 @@
 
 .ImageWrapper {
   width: 50%;
-  height: 100%;
+  height: auto;
   position: relative;
   overflow: hidden;
   float: left;
