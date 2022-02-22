@@ -20,3 +20,12 @@
   position: relative;
   overflow: hidden;
 }
+
+.YoutubeCaption {
+  position: absolute;
+  top: 80%;
+  left: 65%;
+  font-size: 30px;
+  color: white;
+  font-weight: 700;
+}
