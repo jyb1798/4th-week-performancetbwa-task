@@ -108,7 +108,7 @@
 }
 
 .ImageItemLine {
-  margin: 37px 10px;
+  margin: 22px 10px;
   width: 95%;
   border-bottom: 1px solid lightgray;
 }
@@ -133,4 +133,10 @@
   cursor: pointer;
   background-color: transparent;
   z-index: 999;
+}
+
+.ImageWrapper img {
+  width: 130%;
+  height: 130%;
+  overflow: hidden;
 }
