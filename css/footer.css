@@ -1,9 +1,12 @@
 dl,
 dt,
 dd,
+ul,
+li,
 address {
   margin: 0;
   padding: 0;
+  display: block;
 }
 
 .Footer {
@@ -283,21 +286,7 @@ address {
   letter-spacing: -0.21px;
   position: relative;
   display: inline-block;
-  color: #d3d3d3 !important;
-}
-
-.FooterAbout > *:first-child + * + * + * + *
-.FooterAbout > *:first-child + * + * + * + * + *
-.FooterAbout > *:first-child + * + * + * + * + * + *
-.FooterAbout > *:first-child + * + * + * + * + * + * + * {
-  content: "";
-  display: block;
-  position: absolute;
-  top: 6px;
-  right: -10px;
-  width: 1px;
-  height: 13px;
-  background-color: #d3d3d3;
+  color: #d3d3d3;
 }
 
 .FooterAbout > *:first-child + *:before,
@@ -329,7 +318,7 @@ address {
   letter-spacing: -0.21px;
   float: left;
   display: block;
-  color: #f7f7f7 !important;
+  color: #f7f7f7;
   margin: 0 0 0 25px;
 }
 
@@ -463,23 +452,6 @@ address {
     line-height: 19px;
     font-weight: 300;
     letter-spacing: -0.17px;
-  }
-
-  .FooterAbout > *:first-child:before,
-  .FooterAbout > *:first-child + *:before,
-  .FooterAbout > *:first-child + * + *:before,
-  .FooterAbout > *:first-child + * + * + *:before,
-  .FooterAbout > *:first-child + * + * + * + *:before,
-  .FooterAbout > *:first-child + * + * + * + * + *:before,
-  .FooterAbout > *:first-child + * + * + * + * + * + *:before {
-    content: "";
-    display: block;
-    position: absolute;
-    top: 6px;
-    right: -10px;
-    width: 1px;
-    height: 13px;
-    background-color: #d3d3d3;
   }
 
   .FooterAbout > *:first-child:before,
