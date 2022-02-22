@@ -9,7 +9,7 @@ var ImageItemContainerSecond = document.querySelector(
 var ImageNextButton = document.querySelector(".ImageNextButton");
 var ImagePrevButton = document.querySelector(".ImagePrevButton");
 
-var ClassList = [
+var FlowerImageList = [
   {
     name: "틴케이스 센터피스(3/7~3/13)",
     image: "images/MainImage01PC.png",
@@ -33,51 +33,51 @@ var ClassList = [
 function insertClass() {
   ImageMainContent.innerHTML =
     "<span class='ImageWrapper'><img src='" +
-    ClassList[0].image +
+    FlowerImageList[0].image +
     "' alt='mainimage' class='ImageMain'/><div class='ImageText'><p>새로운 일상을 경험하는</p><h3>2월 플라워 클래스</h3></div></span>";
 
   ImageItemContainerFirst.innerHTML =
     "<img src='" +
-    ClassList[1].image +
+    FlowerImageList[1].image +
     "' alt='subimage' class='ImageSub'/><div class='ImageItemTag'><h3>" +
-    ClassList[1].name +
+    FlowerImageList[2].name +
     "</h3><h3>" +
-    ClassList[1].price +
+    FlowerImageList[2].price +
     "</h3><div class='ImageBtnGroup'><button>" +
-    ClassList[1].placeList[0] +
+    FlowerImageList[2].placeList[0] +
     "</button><button>" +
-    ClassList[1].placeList[1] +
+    FlowerImageList[2].placeList[1] +
     "</button><button>" +
-    ClassList[1].placeList[2] +
+    FlowerImageList[2].placeList[2] +
     "</button><button>" +
-    ClassList[1].placeList[3] +
+    FlowerImageList[2].placeList[3] +
     "</button><button>" +
-    ClassList[1].placeList[4] +
+    FlowerImageList[2].placeList[4] +
     "</button></div>";
 
   ImageItemContainerSecond.innerHTML =
     "<img src='" +
-    ClassList[2].image +
+    FlowerImageList[2].image +
     "' alt='subimage' class='ImageSub'/><div class='ImagItemSecondTag'><h3>" +
-    ClassList[1].name +
+    FlowerImageList[1].name +
     "</h3><h3>" +
-    ClassList[2].price +
+    FlowerImageList[2].price +
     "</h3><div class='ImageBtnGroup'><button>" +
-    ClassList[2].placeList[0] +
+    FlowerImageList[2].placeList[0] +
     "</button><button>" +
-    ClassList[2].placeList[1] +
+    FlowerImageList[2].placeList[1] +
     "</button><button>" +
-    ClassList[2].placeList[2] +
+    FlowerImageList[2].placeList[2] +
     "</button><button>" +
-    ClassList[2].placeList[3] +
+    FlowerImageList[2].placeList[3] +
     "</button><button>" +
-    ClassList[2].placeList[4] +
+    FlowerImageList[2].placeList[4] +
     "</button></div>";
 }
 
 ImageNextButton.addEventListener("click", function () {
-  var fistList = ClassList.pop();
-  ClassList.unshift(fistList);
+  var fistList = FlowerImageList.pop();
+  FlowerImageList.unshift(fistList);
   insertClass();
 });
 

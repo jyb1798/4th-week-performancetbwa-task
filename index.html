@@ -25,24 +25,29 @@
   <body>
     <header class="HeaderContainer">
       <div class="HeaderFixed">
-        <a href="/">
-          <div class="HeaderLogo">
-            <img
-              src="images/HeaderLogoLarge.PNG"
-              alt="headerlogo"
-              class="HeaderLG"
-            />
-            <img src="images/HeaderLogo.png" alt="headerlogo" class="HeaderMD" />
-          </div>
-        </a>
-        <nav class="HeaderLeftNav">
-          <a class="HeaderProfile HeaderLG">
-            <img src="images/HeaderProfile.png" alt="headerprofile" />
+        <div class="HeaderWrapper">
+          <a href="/">
+            <div class="HeaderLogo">
+              <img
+                src="images/HeaderLogoLarge.PNG"
+                alt="headerlogo"
+                class="HeaderLG"
+              />
+              <img src="images/HeaderLogo.png" alt="headerlogo" class="HeaderMD" />
+            </div>
           </a>
-          <a class="HeaderShoppingBasket">
-            <img src="images/HeaderShoppingBasket.PNG" alt="Headershoppingbasket" />
-          </a>
-        </nav>
+          <nav class="HeaderLeftNav">
+            <a class="HeaderProfile HeaderLG">
+              <img src="images/HeaderProfile.png" alt="headerprofile" />
+            </a>
+            <a class="HeaderShoppingBasket">
+              <img
+                src="images/HeaderShoppingBasket.PNG"
+                alt="Headershoppingbasket"
+              />
+            </a>
+          </nav>
+        </div>
       </div>
       <nav>
         <ul class="HeaderMenuList">
@@ -61,21 +66,29 @@
     </header>
     <main>
 
-      <section class="Youtube" id="Iframe">
-        <div class="YoutubeWrap">
+      <section class="Youtube" >
+        <div class="YoutubeWrap" id="Iframe">
           <div  class="YoutubeInner">
-            <iframe 
-              class="YoutubeMain"
-              width="100%"    
-              height="100%"
-              src="https://www.youtube.com/embed/F8WZLIO5zNA?theme=dark&autoplay=0&autohide=0&cc_load_policy=1&modestbranding=1&fs=0&showinfo=0&rel=0&iv_load_policy=3&mute=0&loop=1"   
-              sandbox="allow-forms allow-scripts allow-pointer-lock allow-same-origin allow-top-navigation">
-            </iframe>
+            <caption>
+              <a href="https://www.youtube.com/watch?v=k4lC4xuKv3U">
+                <p class="YoutubeCaption">꾸까가 궁금하시다면 Click!</p>
+              </a>
+            </caption>
+              <iframe  
+                class="YoutubeMain" 
+                width="560" 
+                height="315" 
+                src="https://www.youtube.com/embed/k4lC4xuKv3U" 
+                title="YouTube video player" 
+                frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                allowfullscreen>
+              </iframe>
           </div>
         </div>
       </section>
-      <section class="Image" id="Image">
-        <div class="ImageWrap">
+      <section class="Image" >
+        <div class="ImageWrap" id="Image">
           <div class="ImageInner">
             <div class="ImageInbox"> 
               <header class="ImageHead">
@@ -101,7 +114,7 @@
         </div>
         <div class="ImageButtonGroup">
           <button class="ImagePrevButton">
-            <span aria-label="Previous">‹</span>
+            <img >‹</span>
           </button>
           <button class="ImageNextButton">
             <span aria-label="Next">›</span>
@@ -289,12 +302,12 @@
           </nav>
           <dl class="FooterContact">
             <dt>꾸까 고객센터</dt>
-            <dd class="FooterF"><span class="FooterBlind">유선전화번호 : </span>1161-1031</dd>
+            <dd class="FooterF"><span class="FooterBlind">유선전화번호 : </span>1661-1031</dd>
             <dd class="FooterS"><span class="FooterBlind">운영시간 안내 : </span>(평일 10:00 - 13:00, 14:00 - 18:00 / 주말 & 공휴일 제외)</dd>
             <dd class="FooterS FooterAddPartner">기업제휴 문의 : 070-4238-8251</dd>
           </dl>
           <nav class="FooterFaq">
-            <a>꾸까 고객센터></a>
+            <a>꾸까 고객센터 ></a>
           </nav>
           <dl class="FooterAbout">
             <dt class="FooterLogo"><span class="FooterBlind">꾸까</span></dt>

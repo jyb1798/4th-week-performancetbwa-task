@@ -2,7 +2,10 @@
   background: white;
   color: #222;
 }
-
+.HeaderWrapper {
+  max-width: 1024px;
+  margin: 0 auto;
+}
 .ImageWrap {
   width: 100%;
   max-width: 1240px;
@@ -31,12 +34,10 @@
 
 .ImageContent > .ImageWrapper {
   float: left;
-  border: 2px solid #90c;
 }
 
 .ImageContent > .ImageItemRightSideContainer {
   float: right;
-  border: 2px solid #90c;
   width: 50%;
 }
 
@@ -112,8 +113,24 @@
   border-bottom: 1px solid lightgray;
 }
 
-.ImageButtonGroup {
-  font-size: 100px;
-  left: 1000px;
-  position: relative;
+.ImagePrevButton {
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  border-radius: 100%;
+  box-shadow: 0px 8px 15px rgb(0 0 0 / 10%);
+  cursor: pointer;
+  background-color: transparent;
+  z-index: 999;
+}
+
+.ImageNextButton {
+  position: absolute;
+  top: 50%;
+  right: 10%;
+  border-radius: 100%;
+  box-shadow: 0px 8px 15px rgb(0 0 0 / 10%);
+  cursor: pointer;
+  background-color: transparent;
+  z-index: 999;
 }
