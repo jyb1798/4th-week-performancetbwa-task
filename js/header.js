@@ -5,7 +5,9 @@ window.onscroll = function () {
   var windowTop = window.pageYOffset;
   if (windowTop > 0) {
     HeaderFixed.classList.add("HeaderDrop");
-  } else {
+    return;
+  }
+  if (windowTop === 0) {
     HeaderFixed.classList.remove("HeaderDrop");
   }
 };
