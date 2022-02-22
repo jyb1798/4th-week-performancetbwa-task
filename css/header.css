@@ -12,7 +12,10 @@
   z-index: 9000;
   background: #ffffff;
 }
-
+.HeaderWrapper {
+  max-width: 1024px;
+  margin: 0 auto;
+}
 .HeaderDrop {
   box-shadow: 2px 2px 10px 2px rgba(0, 0, 0, 0.1);
 }
@@ -102,6 +105,43 @@
     margin-top: 14.5px;
     margin-left: 13.5px;
     width: 25px;
+  }
+}
+@media \0screen\ {
+  /* IE8 헤더 스타일*/
+  .HeaderContainer {
+    padding-bottom: 90px;
+  }
+  .HeaderMenuList {
+    position: fixed;
+    height: 90px;
+    padding-top: 33px;
+    width: fit-content;
+    left: 45%;
+    z-index: 9900;
+  }
+  .HeaderMenuList li {
+    float: left;
+  }
+  .HeaderMenuList li a span:hover:after {
+    height: 4px;
+    top: 34px;
+  }
+  .HeaderLeftNav {
+    display: none;
+    padding-top: 33px;
+    margin-top: 25px;
+    height: 40px;
+    width: 90px;
+    margin-left: 700px;
+  }
+  .HeaderLeftNav > a > img {
+    margin: 5px 7px 0px 7px;
+    width: 25px;
+  }
+  .HeaderProfile {
+    margin-top: 66px;
+    margin-left: 800px;
   }
 }
 .HeaderFixed:after {
