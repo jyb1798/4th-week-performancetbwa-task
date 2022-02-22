@@ -127,11 +127,11 @@ address {
   outline: 0;
 }
 
-.FooterSns > *:first-child + * {
+.FooterSns *:first-child + * {
   margin-left: 20px;
 }
 
-.FooterSns > *:first-child + * + * {
+.FooterSns *:first-child + * + * {
   margin-left: 20px;
 }
 
@@ -146,15 +146,15 @@ address {
   background-size: 1252px 845px;
 }
 
-.FooterSns > *:first-child:before {
+.FooterSns *:first-child:before {
   background-position: -42px -775px;
 }
 
-.FooterSns > *:first-child + *:before {
+.FooterSns *:first-child + *:before {
   background-position: -1214px -438px;
 }
 
-.FooterSns > *:first-child + * + *:before {
+.FooterSns *:first-child + * + *:before {
   background-position: -1164px -685px;
 }
 
@@ -289,11 +289,11 @@ address {
   color: #d3d3d3;
 }
 
-.FooterAbout > *:first-child + *:before,
-.FooterAbout > *:first-child + * + * + *:before,
-.FooterAbout > *:first-child + * + * + * + *:before,
-.FooterAbout > *:first-child + * + * + * + * + *:before,
-.FooterAbout > *:first-child + * + * + * + * + * + *:before {
+.FooterAbout *:first-child + *:before,
+.FooterAbout *:first-child + * + * + *:before,
+.FooterAbout *:first-child + * + * + * + *:before,
+.FooterAbout *:first-child + * + * + * + * + *:before,
+.FooterAbout *:first-child + * + * + * + * + * + *:before {
   content: "";
   display: block;
   position: absolute;
@@ -362,8 +362,8 @@ address {
     background-position: -575px -306px;
   }
 
-  .FooterSns > *:first-child + *,
-  .FooterSns > *:first-child + * + * {
+  .FooterSns *:first-child + *,
+  .FooterSns *:first-child + * + * {
     margin-left: 0;
   }
 
@@ -379,15 +379,15 @@ address {
     margin: 10px 0 0 10px;
   }
 
-  .FooterSns > *:first-child:before {
+  .FooterSns *:first-child:before {
     background-position: -575px -306px;
   }
 
-  .FooterSns > *:first-child + *:before {
+  .FooterSns *:first-child + *:before {
     background-position: -256px -306px;
   }
 
-  .FooterSns > *:first-child + * + *:before {
+  .FooterSns *:first-child + * + *:before {
     width: 33px;
     background-position: -218px -306px;
   }
@@ -454,13 +454,13 @@ address {
     letter-spacing: -0.17px;
   }
 
-  .FooterAbout > *:first-child:before,
-  .FooterAbout > *:first-child + *:before,
-  .FooterAbout > *:first-child + * + *:before,
-  .FooterAbout > *:first-child + * + * + *:before,
-  .FooterAbout > *:first-child + * + * + * + *:before,
-  .FooterAbout > *:first-child + * + * + * + * + *:before,
-  .FooterAbout > *:first-child + * + * + * + * + * + *:before {
+  .FooterAbout *:first-child:before,
+  .FooterAbout *:first-child + *:before,
+  .FooterAbout *:first-child + * + *:before,
+  .FooterAbout *:first-child + * + * + *:before,
+  .FooterAbout *:first-child + * + * + * + *:before,
+  .FooterAbout *:first-child + * + * + * + * + *:before,
+  .FooterAbout *:first-child + * + * + * + * + * + *:before {
     content: "";
     display: block;
     position: absolute;
@@ -490,11 +490,11 @@ address {
     color: #f7f7f7;
   }
 
-  .FooterTems > *:first-child + * {
+  .FooterTems *:first-child + * {
     margin: 0 0 0 30px;
   }
 
-  .FooterTems > *:first-child + * + * {
+  .FooterTems *:first-child + * + * {
     margin: 0 0 0 30px;
   }
 
