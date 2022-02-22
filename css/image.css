@@ -2,7 +2,10 @@
   background: white;
   color: #222;
 }
-
+.HeaderWrapper {
+  max-width: 1024px;
+  margin: 0 auto;
+}
 .ImageWrap {
   width: 100%;
   max-width: 1240px;
