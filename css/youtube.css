@@ -21,9 +21,11 @@
   overflow: hidden;
 }
 
-/* iframe .YoutubeMain {
-  background: #000000;
-  top: 10px;
-  bottom: 60px;
-  position: relative;
-} */
+.YoutubeCaption {
+  position: absolute;
+  top: 80%;
+  left: 65%;
+  font-size: 30px;
+  color: white;
+  font-weight: 700;
+}
