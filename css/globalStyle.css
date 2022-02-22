@@ -142,3 +142,7 @@ a:active {
   color: #000;
   background-color: none;
 }
+
+img{
+  -webkit-user-drag: none !important;
+}
