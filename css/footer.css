@@ -32,15 +32,12 @@ address {
 .FooterMobileNav ul {
   padding: 0;
   margin: 0;
-  /* display: flex; */
   position: relative;
-  /* align-items: stretch; */
   list-style: none;
   height: 52px;
 }
 
 .FooterMobileNav ul li {
-  /* flex-grow: 1; */
   letter-spacing: -0.5px;
   width: 25%;
   float: left;
@@ -49,14 +46,13 @@ address {
 .FooterMobileNav ul li a {
   padding-top: 10px;
   text-align: center;
-  /* height: 52px; */
   display: block;
   width: 100%;
 }
 
 .FooterMobileNav ul li a::before {
   content: "";
-  background: url(https://kukka-2-media-123.s3.amazonaws.com/static/kukkart_new/img/sprite/kukka.png);
+  background-image: url(https://kukka-2-media-123.s3.amazonaws.com/static/kukkart_new/img/sprite/kukka.png);
   background-size: 626px 422.5px;
   filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='url(https://kukka-2-media-123.s3.amazonaws.com/static/kukkart_new/img/sprite/kukka.png)', sizingMethod='scale');
   -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='url(https://kukka-2-media-123.s3.amazonaws.com/static/kukkart_new/img/sprite/kukka.png)', sizingMethod='scale')";
@@ -138,13 +134,13 @@ address {
 
 .FooterSns a::before {
   content: "";
-  background: url(https://kukka-2-media-123.s3.amazonaws.com/static/kukkart_new/img/sprite/kukka.png);
+  background-image: url(https://kukka-2-media-123.s3.amazonaws.com/static/kukkart_new/img/sprite/kukka.png);
   filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='url(https://kukka-2-media-123.s3.amazonaws.com/static/kukkart_new/img/sprite/kukka.png)', sizingMethod='scale');
   -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='url(https://kukka-2-media-123.s3.amazonaws.com/static/kukkart_new/img/sprite/kukka.png)', sizingMethod='scale')";
   width: 32px;
   height: 32px;
   display: block;
-  background-size: 1252px 845px;
+  /* background-size: 1252px 845px; */
 }
 
 .FooterSns > *:first-child::before {
@@ -268,7 +264,7 @@ address {
   position: absolute;
   top: -60px;
   right: 0;
-  background: url(https://kukka-2-media-123.s3.amazonaws.com/static/kukkart_new/img/sprite/kukka.png);
+  background-image: url(https://kukka-2-media-123.s3.amazonaws.com/static/kukkart_new/img/sprite/kukka.png);
   filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='url(https://kukka-2-media-123.s3.amazonaws.com/static/kukkart_new/img/sprite/kukka.png)', sizingMethod='scale');
   -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='url(https://kukka-2-media-123.s3.amazonaws.com/static/kukkart_new/img/sprite/kukka.png)', sizingMethod='scale')";
   width: 150px;
@@ -289,36 +285,10 @@ address {
   color: #d3d3d3;
 }
 
-.FooterAbout
-  > *:first-child
-  + *
-  + *
-  + *
-  + *
-  .FooterAbout
-  > *:first-child
-  + *
-  + *
-  + *
-  + *
-  + *
-  .FooterAbout
-  > *:first-child
-  + *
-  + *
-  + *
-  + *
-  + *
-  + *
-  .FooterAbout
-  > *:first-child
-  + *
-  + *
-  + *
-  + *
-  + *
-  + *
-  + * {
+.FooterAbout > *:first-child + * + * + * + *
+.FooterAbout > *:first-child + * + * + * + * + *
+.FooterAbout > *:first-child + * + * + * + * + * + *
+.FooterAbout > *:first-child + * + * + * + * + * + * + * {
   content: "";
   display: block;
   position: absolute;
@@ -408,7 +378,7 @@ address {
 
   .FooterSns a::before {
     content: "";
-    background: url(https://kukka-2-media-123.s3.amazonaws.com/static/kukkart_new/img/sprite/kukka.png);
+    background-image: url(https://kukka-2-media-123.s3.amazonaws.com/static/kukkart_new/img/sprite/kukka.png);
     filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='url(https://kukka-2-media-123.s3.amazonaws.com/static/kukkart_new/img/sprite/kukka.png)', sizingMethod='scale');
     -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='url(https://kukka-2-media-123.s3.amazonaws.com/static/kukkart_new/img/sprite/kukka.png)', sizingMethod='scale')";
     width: 24px;
@@ -534,7 +504,6 @@ address {
   }
 
   .FooterTems {
-    /* position: unset; */
     position: relative;
     margin-top: 30px;
     bottom: 4px;
@@ -545,11 +514,11 @@ address {
     font-size: 12px;
   }
 
-  .FooterTems a > *:first-child + * {
+  .FooterTems > *:first-child + * {
     margin: 0 0 0 30px;
   }
 
-  .FooterTems a > *:first-child + * + * {
+  .FooterTems > *:first-child + * + * {
     margin: 0 0 0 30px;
   }
 
