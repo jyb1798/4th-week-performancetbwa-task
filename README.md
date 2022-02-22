@@ -112,6 +112,14 @@ $ git clone https://github.com/PreOnboardingTeam-16/4th-week-performancetbwa-tas
   
 ### ⚡구현 중 기술적 이슈들
 
+#### addEventListener & attachEvent
+
+`IE8` 이하에서는 `addEventListener` 리스너가 동작하지 않았기 때문에, 대신에 `attachEvent`를 사용하였습니다.
+
+```js
+  element.addEventListener ? element.addEventListener('click',function(){...}) : element.attachEvent('onclick',function(){...})
+```
+
 #### NodeList.prototype.forEach
 
 `IE`에서는 NodeList API의 `forEach`가 지원되지 않았습니다. popUp의 슬라이드 구현을 위해서 편의상 `forEach`가 필요했기 때문에 Polyfill을 통해서 forEach를 사용하였습니다.
