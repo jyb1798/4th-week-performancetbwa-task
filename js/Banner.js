@@ -1,10 +1,14 @@
-
 var carouselindex = 0;
 var $Banner = document.querySelector(".BannerSection");
 var windowidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+if (window.attachEvent) {
+    window.attachEvent("onresize", function(){windowidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;})
+} else {
+    window.addEventListener("resize", function(){windowidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;}, false)
+};
 var $BannerStage = document.querySelector(".BannerStage");
 
-if(windowidth < 750){
+if(windowidth < 1024){
     console.log(windowidth);
     var BannerCurrentPosion = -((windowidth - 40)*2 + carouselindex*(windowidth - 40))
 
@@ -156,5 +160,57 @@ if(windowidth < 750){
     }else{
         $PrevButton.attachEvent("onclick", handleprev);
     }
+
+}else{
+    document.querySelector('.BannerContent').style.padding = "20px 0";
+    document.querySelector('.BannerInbox').style.display = 'none';
+    console.log(windowidth, 'over1024');
+    $BannerStage.style.width = windowidth.toString() +"px"
+
+    var $BannerItems = document.querySelectorAll(".BannerItem");
+    for(var idx = 0; idx < $BannerItems.length; idx++){
+        $BannerItems[idx].style.width = (windowidth/2).toString() +"px";
+        $BannerItems[idx].style.height = '156px';
+        $BannerItems[idx].style.textAlign = 'center';
+    }
+    var mobbackground = document.querySelectorAll(".BannerItem .BannerItemBackgroundMobile");
+    for (var idx = 0; idx< mobbackground.length; idx ++){
+        mobbackground[idx].style.display = 'none';
+    }
+    var pcbackground = document.querySelectorAll('.BannerItem .BannerItemBackgroundPC');
+    for (var idx = 0; idx < pcbackground.length; idx++){
+        pcbackground[idx].style.display = 'block';
+    }
+    var mobileImg = document.querySelectorAll('.BannerItem .BannerItemImageMobile');
+    for (var idx = 0; idx < mobileImg.length; idx++){
+        mobileImg[idx].style.display = 'none';
+    }
+
+    var pcImg = document.querySelectorAll('.BannerItem .BannerItemImagePc');
+    for (var idx = 0; idx < pcImg.length; idx++){
+        pcImg[idx].style.display = 'block';
+    }
+
+    var moreButtons = document.querySelectorAll('.BannerItem .BannerItemMore');
+    for (var idx = 0; idx < moreButtons.length; idx++){
+        moreButtons[idx].style.display = 'block';
+    }
+
+    var $BannerCloneItems = document.querySelectorAll(".BannerCloneItem");
+        for(var idx = 0; idx < $BannerCloneItems.length; idx++){
+            $BannerCloneItems[idx].style.display = "none";
+    }
+
+    var BannerDesc = document.querySelectorAll(".BannerItem .Bannerdesc");
+        for(var idx = 0; idx < BannerDesc.length; idx++){
+            console.log(BannerDesc[idx].style);
+            BannerDesc[idx].style.top = '36%';
+            BannerDesc[idx].style.fontSize ='12px';
+            BannerDesc[idx].style.lineHeight = '20px';
+            BannerDesc[idx].style.fontWeigth = '300';
+            BannerDesc[idx].style.letterSpacing = '-.21px';
+            BannerDesc[idx].style.color = '#222';
+        }
+
 }
 //export default BANNER;
