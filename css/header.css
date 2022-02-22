@@ -37,6 +37,7 @@
     top: 34px;
   }
   .HeaderLeftNav {
+    float: right;
     margin-top: 25px;
     height: 40px;
     width: 90px;
@@ -95,6 +96,7 @@
     background: #ffca43;
   }
   .HeaderLeftNav {
+    float: right;
     margin-top: 0px;
     height: 52px;
     width: 52px;
@@ -126,20 +128,14 @@
     top: 34px;
   }
   .HeaderLeftNav {
-    display: none;
-    padding-top: 33px;
-    margin-top: 25px;
-    height: 40px;
-    width: 90px;
-    margin-left: 700px;
+    position: fixed;
+    right: 0;
   }
   .HeaderLeftNav > a > img {
     margin: 5px 7px 0px 7px;
     width: 25px;
   }
   .HeaderProfile {
-    margin-top: 66px;
-    margin-left: 800px;
   }
 }
 .HeaderFixed:after {
@@ -179,10 +175,6 @@
 }
 .HeaderFlowerClassList {
   margin-left: 50px;
-}
-
-.HeaderLeftNav {
-  float: right;
 }
 
 .HeaderProfile {
