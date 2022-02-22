@@ -121,6 +121,14 @@ address {
   margin-left: 20px;
 }
 
+.FooterSns a:nth-child(2){
+  margin-left: 20px;
+}
+
+.FooterSns a:nth-child(3){
+  margin-left: 20px;
+}
+
 .FooterSns a::before {
   content: "";
   background: url(https://kukka-2-media-123.s3.amazonaws.com/static/kukkart_new/img/sprite/kukka.png);
@@ -271,7 +279,24 @@ address {
 }
 
 .FooterAbout
-  dd:not(.FooterAbout dd:nth-child(8), .FooterAbout dd:nth-child(10)):before {
+  dd:not(.FooterAbout dd:nth-child(4),.FooterAbout dd:nth-child(8), .FooterAbout dd:nth-child(10)):before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 6px;
+  right: -10px;
+  width: 1px;
+  height: 13px;
+  background: #d3d3d3;
+}
+
+.FooterAbout
+  dd:nth-child(1):before,.FooterAbout
+  dd:nth-child(2):before,.FooterAbout
+  dd:nth-child(3):before,.FooterAbout
+  dd:nth-child(5):before,.FooterAbout
+  dd:nth-child(6):before,.FooterAbout
+  dd:nth-child(7):before {
   content: "";
   display: block;
   position: absolute;
@@ -440,6 +465,23 @@ address {
     background: #d3d3d3;
   }
 
+  .FooterAbout dd:nth-child(1)::before,
+  .FooterAbout dd:nth-child(2)::before,
+  .FooterAbout dd:nth-child(3)::before,
+  .FooterAbout dd:nth-child(4)::before,
+  .FooterAbout dd:nth-child(5)::before,
+  .FooterAbout dd:nth-child(6)::before,
+  .FooterAbout dd:nth-child(7)::before{
+    content: "";
+    display: block;
+    position: absolute;
+    top: 6px;
+    right: -10px;
+    width: 1px;
+    height: 13px;
+    background: #d3d3d3;
+  }
+
   .FooterBr {
     display: none;
     padding: 15px 0 0;
@@ -447,8 +489,11 @@ address {
   }
 
   .FooterTems {
-    position: initial;
-    margin-top: 30px;
+    /* position: unset; */
+    position: relative;
+    margin-top: 30px; 
+    bottom: 4px;
+
   }
 
   .FooterTems a {
@@ -456,7 +501,14 @@ address {
     font-size: 12px;
   }
 
-  .FooterTems a:not(.FooterTems a:nth-child(1)) {
+  .FooterTems a:nth-child(2){
     margin: 0 0 0 30px;
+  }
+
+  .FooterTems a:nth-child(3){
+    margin: 0 0 0 30px;
+  }
+
+  .FooterTems a:not(.FooterTems a:nth-child(1)) {
   }
 }
