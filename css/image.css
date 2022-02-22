@@ -6,6 +6,7 @@
 .ImageWrap {
   width: 100%;
   max-width: 1240px;
+  height: 700px;
   margin: 0 auto;
   padding: 0 60px;
   line-height: 16px;
@@ -14,32 +15,47 @@
 
 .ImageInner {
   margin: 0;
-  padding: 80px 0;
+  padding: 10px 0;
   width: 100%;
+  height: 100%;
   position: relative;
 }
 
 .ImageWrapper {
   width: 50%;
+  height: 100%;
   position: relative;
   overflow: hidden;
+  float: left;
 }
 
-.ImageContent {
-  display: flex;
-  align-items: center;
-  width: 100%;
-  position: relative;
+.ImageContent > .ImageWrapper {
+  float: left;
+  border: 2px solid #90c;
 }
 
-.ImageItemRightSideContainer {
+.ImageContent > .ImageItemRightSideContainer {
+  float: right;
+  border: 2px solid #90c;
   width: 50%;
 }
 
-.ImageItem {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+.ImageItemContainerFirst > .ImageSub {
+  width: 60%;
+}
+
+.ImageItemContainerSecond > .ImageSub {
+  width: 60%;
+}
+
+.ImageItemTag {
+  float: right;
+  width: 40%;
+}
+
+.ImagItemSecondTag {
+  float: right;
+  width: 40%;
 }
 
 .ImageWrapper .ImageText {
@@ -50,12 +66,8 @@
 
 .ImageBtnGroup button {
   background-color: white;
-  margin: 5px;
-  padding: 10px 14px;
   cursor: pointer;
   border-radius: 40px;
-  margin-right: 4px;
-  margin-bottom: 2px;
 }
 
 .ImageBtnGroup button:first-child {
@@ -95,11 +107,13 @@
 }
 
 .ImageItemLine {
-  margin: 10px 0;
-  width: 100%;
+  margin: 37px 10px;
+  width: 95%;
   border-bottom: 1px solid lightgray;
 }
 
-.ImageItemContainer {
-  display: flex;
+.ImageButtonGroup {
+  font-size: 100px;
+  left: 1000px;
+  position: relative;
 }
