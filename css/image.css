@@ -1,7 +1,6 @@
 .Image {
   background: white;
   color: #222;
-  -webkit-user-drag: none;
 }
 .HeaderWrapper {
   max-width: 1024px;
