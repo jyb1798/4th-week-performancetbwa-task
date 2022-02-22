@@ -121,6 +121,10 @@ $ git clone https://github.com/PreOnboardingTeam-16/4th-week-performancetbwa-tas
   else element.attachEvent('onclick',function(){...})
 ```
 
+두 방법 모두 이벤트를 요소에 연결하는 역할을 하지만,
+attachEvent는 IE의 [Trident Rendering Engines(MSHTML)](https://en.wikipedia.org/wiki/MSHTML) 환경(IE5-8)에서만 동작하며, 
+addEventListener는 대부분의 브라우저(IE9 이상,크롬 등)에서 동작하는 W3 표준입니다.
+
 #### NodeList.prototype.forEach
 
 `IE`에서는 NodeList API의 `forEach`가 지원되지 않았습니다. popUp의 슬라이드 구현을 위해서 편의상 `forEach`가 필요했기 때문에 Polyfill을 통해서 forEach를 사용하였습니다.
