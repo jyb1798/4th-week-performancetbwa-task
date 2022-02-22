@@ -60,7 +60,22 @@
   width: 40%;
 }
 
-@media (max-width: 768px) {
+.ImageMainContent:hover .ImageMain {
+  transition: all 0.25s;
+  transform: scale(1.15);
+}
+
+.ImageItemContainerFirst:hover .ImageSub {
+  transition: all 0.25s;
+  transform: scale(1.15);
+}
+
+.ImageItemContainerSecond:hover .ImageSub {
+  transition: all 0.25s;
+  transform: scale(1.15);
+}
+
+@media (max-width: 767px) {
   .ImageWrapper {
     width: 100%;
   }
