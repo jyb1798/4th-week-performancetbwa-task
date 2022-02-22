@@ -70,6 +70,9 @@ function handleSlideStart() {
   slide = setInterval(function () {
     popUpSlide.style.transition = "transform 1s ease-in-out";
     popUpSlide.style.transform = "translateX(" + -1 * 360 * slideIndex + "px)";
+    Array.from(popUpDot).forEach(function(el){
+      el.style.backgroundColor = el.dataset.slideIndex === String(slideIndex) ? 'red':'#bdbdbd' ;
+    })
     slideIndex++;
     if (slideIndex === 4) {
       setTimeout(function () {
@@ -97,6 +100,9 @@ popUpDot.forEach(function (el) {
       popUpSlide.style.transform =
         "translateX(" + el.dataset.slideIndex * -1 * 360 + "px)";
       slideIndex = el.dataset.slideIndex;
+      Array.from(popUpDot).forEach(function(el){
+        el.style.backgroundColor = el.dataset.slideIndex === String(slideIndex) ? 'red':'#bdbdbd' ;
+      })
       setTimeout(handleSlideStart(), 5000);
     });
   } else {
@@ -105,6 +111,9 @@ popUpDot.forEach(function (el) {
       popUpSlide.style.transform =
         "translateX(" + el.dataset.slideIndex * -1 * 360 + "px)";
       slideIndex = el.dataset.slideIndex;
+      Array.from(popUpDot).forEach(function(el){
+        el.style.backgroundColor = el.dataset.slideIndex === String(slideIndex) ? 'red':'#bdbdbd' ;
+      })
       setTimeout(handleSlideStart(), 5000);
     });
   }
