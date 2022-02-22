@@ -86,7 +86,11 @@ video {
   font: inherit;
   vertical-align: baseline;
 }
-/* HTML5 display-role reset for older browsers */
+
+header,section,nav,footer {
+  display: block;
+}
+
 article,
 aside,
 details,
