@@ -69,6 +69,8 @@
   background-color: white;
   cursor: pointer;
   border-radius: 40px;
+  margin: 5px;
+  padding: 7px;
 }
 
 .ImageBtnGroup button:first-child {
@@ -116,27 +118,40 @@
 .ImagePrevButton {
   position: absolute;
   top: 50%;
-  left: 10%;
+  left: -10%;
   border-radius: 100%;
   box-shadow: 0px 8px 15px rgb(0 0 0 / 10%);
   cursor: pointer;
   background-color: transparent;
   z-index: 999;
+  width: 80px;
+  height: 80px;
+  border-color: transparent;
 }
 
 .ImageNextButton {
   position: absolute;
   top: 50%;
-  right: 10%;
+  right: -10%;
   border-radius: 100%;
   box-shadow: 0px 8px 15px rgb(0 0 0 / 10%);
   cursor: pointer;
   background-color: transparent;
   z-index: 999;
+  width: 80px;
+  height: 80px;
+  border-color: transparent;
 }
 
 .ImageWrapper img {
   width: 130%;
   height: 130%;
   overflow: hidden;
+}
+
+.ImageTextRight,
+.ImageTextLeft {
+  font-size: 50px;
+  color: lightgray;
+  display: block;
 }
