@@ -52,6 +52,10 @@
     -webkit-tap-highlight-color: transparent;
     -webkit-touch-callout: none;
 }
+.BannerItem:hover .BannerItemImagePc{
+    transition: all 0.25s;
+    transform: scale(1.15);
+}
 
 .BannerCloneItem{
     height: 295px;
