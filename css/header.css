@@ -11,7 +11,11 @@
   height: 90px;
   width: 100%;
   z-index: 9000;
-  background-color: #ffffff;
+  background: #ffffff;
+}
+
+.HeaderDrop {
+  box-shadow: 2px 2px 10px 2px rgba(0, 0, 0, 0.1);
 }
 @media screen and (min-width: 1024px) {
   .HeaderContainer {
@@ -22,7 +26,9 @@
     justify-content: center;
     z-index: 9000;
     height: 90px;
-    padding: 33px 130px 0;
+    padding-top: 33px;
+    width: fit-content;
+    left: calc(50% - 91.5px);
   }
   .HeaderMenuList li a span:hover:after {
     height: 4px;
@@ -44,7 +50,6 @@
   }
   .HeaderFixed {
     height: 52px;
-    background-color: #ffffff;
   }
   .HeaderLG {
     display: none;
@@ -64,6 +69,7 @@
     padding: 0px;
     align-items: center;
     border-bottom: #ececec 1px solid;
+    width: 100%;
   }
   .HeaderMenuList li {
     flex: 1;
@@ -110,7 +116,6 @@
   text-align: center;
   display: flex;
   justify-content: center;
-  width: 100%;
 }
 .HeaderMenuList li a {
   position: relative;
