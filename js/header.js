@@ -4,11 +4,11 @@ var headerHeight = HeaderFixed.offsetHeight;
 window.onscroll = function () {
   var windowTop = window.pageYOffset;
   if (windowTop > 0) {
-    HeaderFixed.classList.add("HeaderDrop");
+    HeaderFixed.style.boxShadow = "2px 2px 10px 2px rgba(0, 0, 0, 0.1)";
     return;
   }
   if (windowTop === 0) {
-    HeaderFixed.classList.remove("HeaderDrop");
+    HeaderFixed.style.boxShadow = "none";
   }
 };
 
@@ -17,7 +17,7 @@ $('a[href^="#"]').click(function () {
 
   $("html, body").animate(
     {
-      scrollTop: $(the_id).offset().top - 20,
+      scrollTop: $(the_id).offset().top - 50,
     },
     "slow"
   );
