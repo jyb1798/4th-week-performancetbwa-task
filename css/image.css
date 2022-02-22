@@ -110,6 +110,10 @@
   }
 
   .ImageBtnGroup button {
+    font-size: 1px;
+  }
+
+  .ImageBtnGroup button:nth-child(-n + 4) {
     display: none;
   }
 
