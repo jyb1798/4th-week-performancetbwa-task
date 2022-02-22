@@ -75,28 +75,28 @@ address {
   color: #222;
 }
 
-.FooterMobileNav ul li:nth-child(1) a span {
+.FooterMobileNav ul > *:first-child a span {
   margin-top: 5px;
 }
 
-.FooterMobileNav ul li:nth-child(1) a::before {
+.FooterMobileNav ul > *:first-child a::before {
   background-position: -601px -275px;
   width: 17px;
   height: 13px;
   margin-top: 3px;
 }
 
-.FooterMobileNav ul li:nth-child(2) a::before {
+.FooterMobileNav ul > *:first-child + * a::before {
   background-position: -601px -246px;
   margin-top: -2px;
 }
 
-.FooterMobileNav ul li:nth-child(3) a::before {
+.FooterMobileNav ul > *:first-child + * + * a::before {
   background-position: -401px -306px;
   margin-top: -2px;
 }
 
-.FooterMobileNav ul li:nth-child(4) a::before {
+.FooterMobileNav ul > *:first-child + * + * + * a::before {
   background-position: -608px -76px;
   width: 17px;
   height: 19px;
@@ -128,15 +128,11 @@ address {
   outline: 0;
 }
 
-.FooterSns a:not(.FooterSns a:nth-child(1)) {
+.FooterSns > *:first-child + * {
   margin-left: 20px;
 }
 
-.FooterSns a:nth-child(2) {
-  margin-left: 20px;
-}
-
-.FooterSns a:nth-child(3) {
+.FooterSns > *:first-child + * + * {
   margin-left: 20px;
 }
 
@@ -151,15 +147,15 @@ address {
   background-size: 1252px 845px;
 }
 
-.FooterSns a:nth-child(1)::before {
+.FooterSns > *:first-child::before {
   background-position: -42px -775px;
 }
 
-.FooterSns a:nth-child(2)::before {
+.FooterSns > *:first-child + *::before {
   background-position: -1214px -438px;
 }
 
-.FooterSns a:nth-child(3)::before {
+.FooterSns > *:first-child + * + *::before {
   background-position: -1164px -685px;
 }
 
@@ -294,8 +290,35 @@ address {
 }
 
 .FooterAbout
-  dd:not(.FooterAbout dd:nth-child(4), .FooterAbout
-    dd:nth-child(8), .FooterAbout dd:nth-child(10)):before {
+  > *:first-child
+  + *
+  + *
+  + *
+  + *
+  .FooterAbout
+  > *:first-child
+  + *
+  + *
+  + *
+  + *
+  + *
+  .FooterAbout
+  > *:first-child
+  + *
+  + *
+  + *
+  + *
+  + *
+  + *
+  .FooterAbout
+  > *:first-child
+  + *
+  + *
+  + *
+  + *
+  + *
+  + *
+  + * {
   content: "";
   display: block;
   position: absolute;
@@ -306,12 +329,11 @@ address {
   background-color: #d3d3d3;
 }
 
-.FooterAbout dd:nth-child(1):before,
-.FooterAbout dd:nth-child(2):before,
-.FooterAbout dd:nth-child(3):before,
-.FooterAbout dd:nth-child(5):before,
-.FooterAbout dd:nth-child(6):before,
-.FooterAbout dd:nth-child(7):before {
+.FooterAbout > *:first-child + *:before,
+.FooterAbout > *:first-child + * + * + *:before,
+.FooterAbout > *:first-child + * + * + * + *:before,
+.FooterAbout > *:first-child + * + * + * + * + *:before,
+.FooterAbout > *:first-child + * + * + * + * + * + *:before {
   content: "";
   display: block;
   position: absolute;
@@ -379,7 +401,8 @@ address {
     background-position: -575px -306px;
   }
 
-  .FooterSns a:not(.FooterSns a:nth-child(1)) {
+  .FooterSns > *:first-child + *,
+  .FooterSns > *:first-child + * + * {
     margin-left: 0;
   }
 
@@ -395,15 +418,15 @@ address {
     margin: 10px 0 0 10px;
   }
 
-  .FooterSns a:nth-child(1)::before {
+  .FooterSns > *:first-child::before {
     background-position: -575px -306px;
   }
 
-  .FooterSns a:nth-child(2)::before {
+  .FooterSns > *:first-child + *::before {
     background-position: -256px -306px;
   }
 
-  .FooterSns a:nth-child(3)::before {
+  .FooterSns > *:first-child + * + *::before {
     width: 33px;
     background-position: -218px -306px;
   }
@@ -470,7 +493,13 @@ address {
     letter-spacing: -0.17px;
   }
 
-  .FooterAbout dd:not(.FooterAbout dd:nth-child(10)):before {
+  .FooterAbout > *:first-child:before,
+  .FooterAbout > *:first-child + *:before,
+  .FooterAbout > *:first-child + * + *:before,
+  .FooterAbout > *:first-child + * + * + *:before,
+  .FooterAbout > *:first-child + * + * + * + *:before,
+  .FooterAbout > *:first-child + * + * + * + * + *:before,
+  .FooterAbout > *:first-child + * + * + * + * + * + *:before {
     content: "";
     display: block;
     position: absolute;
@@ -481,13 +510,13 @@ address {
     background-color: #d3d3d3;
   }
 
-  .FooterAbout dd:nth-child(1)::before,
-  .FooterAbout dd:nth-child(2)::before,
-  .FooterAbout dd:nth-child(3)::before,
-  .FooterAbout dd:nth-child(4)::before,
-  .FooterAbout dd:nth-child(5)::before,
-  .FooterAbout dd:nth-child(6)::before,
-  .FooterAbout dd:nth-child(7)::before {
+  .FooterAbout > *:first-child:before,
+  .FooterAbout > *:first-child + *:before,
+  .FooterAbout > *:first-child + * + *:before,
+  .FooterAbout > *:first-child + * + * + *:before,
+  .FooterAbout > *:first-child + * + * + * + *:before,
+  .FooterAbout > *:first-child + * + * + * + * + *:before,
+  .FooterAbout > *:first-child + * + * + * + * + * + *:before {
     content: "";
     display: block;
     position: absolute;
@@ -516,14 +545,12 @@ address {
     font-size: 12px;
   }
 
-  .FooterTems a:nth-child(2) {
+  .FooterTems a > *:first-child + * {
     margin: 0 0 0 30px;
   }
 
-  .FooterTems a:nth-child(3) {
+  .FooterTems a > *:first-child + * + * {
     margin: 0 0 0 30px;
   }
 
-  .FooterTems a:not(.FooterTems a:nth-child(1)) {
-  }
 }
