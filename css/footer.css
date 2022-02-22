@@ -229,7 +229,7 @@ address {
   padding: 0 20px;
   border: #9b9b9b 1px solid;
   border-radius: 18px;
-  behavior: url( "./PIE.htc" );
+  behavior: url("/css/PIE.htc");
   cursor: pointer;
   line-height: 36px;
   font-weight: 300;
@@ -280,7 +280,7 @@ address {
 
 .FooterAbout dd {
   margin-right: 18px;
-  font-size: 14px; 
+  font-size: 14px;
   line-height: 25px;
   font-weight: 600;
   letter-spacing: -0.21px;
@@ -497,5 +497,4 @@ address {
   .FooterTems *:first-child + * + * {
     margin: 0 0 0 30px;
   }
-
 }
