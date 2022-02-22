@@ -40,19 +40,19 @@ function insertClass() {
     "<img src='" +
     ClassList[1].image +
     "' alt='subimage' class='ImageSub'/><div class='ImageItemTag'><h3>" +
-    ClassList[1].name +
+    ClassList[2].name +
     "</h3><h3>" +
-    ClassList[1].price +
+    ClassList[2].price +
     "</h3><div class='ImageBtnGroup'><button>" +
-    ClassList[1].placeList[0] +
+    ClassList[2].placeList[0] +
     "</button><button>" +
-    ClassList[1].placeList[1] +
+    ClassList[2].placeList[1] +
     "</button><button>" +
-    ClassList[1].placeList[2] +
+    ClassList[2].placeList[2] +
     "</button><button>" +
-    ClassList[1].placeList[3] +
+    ClassList[2].placeList[3] +
     "</button><button>" +
-    ClassList[1].placeList[4] +
+    ClassList[2].placeList[4] +
     "</button></div>";
 
   ImageItemContainerSecond.innerHTML =
