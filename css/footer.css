@@ -226,7 +226,7 @@ address {
   padding: 0 20px;
   border: #9b9b9b 1px solid;
   border-radius: 18px;
-  behavior: url( "PIE.htc" );
+  behavior: url( "./PIE.htc" );
   cursor: pointer;
   line-height: 36px;
   font-weight: 300;
@@ -283,7 +283,7 @@ address {
   letter-spacing: -0.21px;
   position: relative;
   display: inline-block;
-  color: #d3d3d3;
+  color: #d3d3d3 !important;
 }
 
 .FooterAbout > *:first-child + * + * + * + *
@@ -319,6 +319,7 @@ address {
   position: absolute;
   bottom: 82px;
   right: 0;
+  color: #f7f7f7;
 }
 
 .FooterTems a {
@@ -328,7 +329,7 @@ address {
   letter-spacing: -0.21px;
   float: left;
   display: block;
-  color: #fff;
+  color: #f7f7f7 !important;
   margin: 0 0 0 25px;
 }
 
@@ -508,11 +509,13 @@ address {
     position: relative;
     margin-top: 30px;
     bottom: 4px;
+    color: #f7f7f7;
   }
 
   .FooterTems a {
     margin: 0;
     font-size: 12px;
+    color: #f7f7f7;
   }
 
   .FooterTems > *:first-child + * {
