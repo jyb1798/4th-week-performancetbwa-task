@@ -158,7 +158,7 @@ address {
   background-position: -1164px -685px;
 }
 
-.FooterSns:after {
+.FooterSns {
   content: "";
   display: block;
   clear: both;
