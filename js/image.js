@@ -75,16 +75,32 @@ function insertClass() {
     "</button></div>";
 }
 
-ImageNextButton.addEventListener("click", function () {
-  var fistList = FlowerImageList.pop();
-  FlowerImageList.unshift(fistList);
-  insertClass();
-});
+if (ImageNextButton.addEventListener) {
+  ImageNextButton.addEventListener("click", function () {
+    var fistList = FlowerImageList.pop();
+    FlowerImageList.unshift(fistList);
+    insertClass();
+  });
+} else {
+  ImageNextButton.attachEvent("click", function () {
+    var fistList = FlowerImageList.pop();
+    FlowerImageList.unshift(fistList);
+    insertClass();
+  });
+}
 
-ImagePrevButton.addEventListener("click", function () {
-  var lastList = ClassList.shift();
-  ClassList.push(lastList);
-  insertClass();
-});
+if (ImagePrevButton.addEventListener) {
+  ImagePrevButton.addEventListener("click", function () {
+    var lastList = FlowerImageList.shift();
+    FlowerImageList.push(lastList);
+    insertClass();
+  });
+} else {
+  ImagePrevButton.attachEvent("click", function () {
+    var lastList = FlowerImageList.shift();
+    FlowerImageList.push(lastList);
+    insertClass();
+  });
+}
 
 insertClass();
