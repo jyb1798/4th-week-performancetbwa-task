@@ -6,8 +6,7 @@
 }
 .HeaderFixed {
   position: fixed;
-  display: flex;
-  justify-content: space-between;
+  display: block;
   height: 90px;
   width: 100%;
   z-index: 9000;
@@ -23,12 +22,14 @@
   }
   .HeaderMenuList {
     position: fixed;
-    justify-content: center;
-    z-index: 9000;
     height: 90px;
     padding-top: 33px;
     width: fit-content;
     left: calc(50% - 91.5px);
+    z-index: 9900;
+  }
+  .HeaderMenuList li {
+    float: left;
   }
   .HeaderMenuList li a span:hover:after {
     height: 4px;
@@ -39,7 +40,7 @@
     height: 40px;
     width: 90px;
   }
-  .HeaderLeftNav > a > svg {
+  .HeaderLeftNav > a > img {
     margin: 5px 7px 0px 7px;
     width: 25px;
   }
@@ -70,10 +71,15 @@
     align-items: center;
     border-bottom: #ececec 1px solid;
     width: 100%;
+    display: table;
+    table-layout: fixed;
+    z-index: 8900;
   }
-  .HeaderMenuList li {
-    flex: 1;
+  .HeaderMenuList > li {
     margin: 0;
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
   }
   .HeaderMenuList li a {
     display: block;
@@ -92,7 +98,7 @@
     height: 52px;
     width: 52px;
   }
-  .HeaderLeftNav > a > svg {
+  .HeaderLeftNav > a > img {
     margin-top: 14.5px;
     margin-left: 13.5px;
     width: 25px;
@@ -113,9 +119,8 @@
   text-decoration: none;
 }
 .HeaderMenuList {
-  text-align: center;
-  display: flex;
-  justify-content: center;
+}
+.HeaderMenuList li {
 }
 .HeaderMenuList li a {
   position: relative;
@@ -136,7 +141,7 @@
 }
 .HeaderLogo {
   margin-top: 20px;
-  display: inline-block;
+  float: left;
 }
 
 .HeaderFlowerClassList {
@@ -144,10 +149,13 @@
 }
 
 .HeaderLeftNav {
+  float: right;
 }
 
 .HeaderProfile {
+  position: relative;
 }
 
 .HeaderhoppingBasket {
+  position: relative;
 }
