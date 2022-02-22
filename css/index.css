@@ -3,4 +3,11 @@
 @import "/css/image.css";
 @import "/css/Banner.css";
 @import "/css/footer.css";
+@import "/css/popUp.css";
 @import "/css/youtube.css";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap');
+
+body{
+  font-family: 'Noto Sans KR', sans-serif;
+}
+

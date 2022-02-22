@@ -1,12 +1,98 @@
+.HeaderMD {
+  display: none;
+}
 .HeaderContainer {
   position: relative;
+}
+.HeaderFixed {
+  position: fixed;
   display: flex;
   justify-content: space-between;
   height: 90px;
   width: 100%;
   z-index: 9000;
+  background-color: #ffffff;
 }
-.HeaderContainer:after {
+@media screen and (min-width: 1024px) {
+  .HeaderContainer {
+    padding-bottom: 90px;
+  }
+  .HeaderMenuList {
+    position: fixed;
+    justify-content: center;
+    z-index: 9000;
+    height: 90px;
+    padding: 33px 130px 0;
+  }
+  .HeaderMenuList li a span:hover:after {
+    height: 4px;
+    top: 34px;
+  }
+  .HeaderLeftNav {
+    margin-top: 25px;
+    height: 40px;
+    width: 90px;
+  }
+  .HeaderLeftNav > a > svg {
+    margin: 5px 7px 0px 7px;
+    width: 25px;
+  }
+}
+@media screen and (max-width: 1023px) {
+  .HeaderContainer {
+    padding-bottom: 96px;
+  }
+  .HeaderFixed {
+    height: 52px;
+    background-color: #ffffff;
+  }
+  .HeaderLG {
+    display: none;
+  }
+  .HeaderMD {
+    display: block;
+  }
+  .HeaderLogo {
+    width: 167px;
+    height: 22px;
+  }
+  .HeaderMenuList {
+    background-color: #ffffff;
+    position: absolute;
+    top: 52px;
+    height: 44px;
+    padding: 0px;
+    align-items: center;
+    border-bottom: #ececec 1px solid;
+  }
+  .HeaderMenuList li {
+    flex: 1;
+    margin: 0;
+  }
+  .HeaderMenuList li a {
+    display: block;
+  }
+  .HeaderMenuList li > a :hover:after {
+    content: "";
+    position: absolute;
+    height: 2px;
+    left: 0;
+    width: 100%;
+    top: 29px;
+    background: #ffca43;
+  }
+  .HeaderLeftNav {
+    margin-top: 0px;
+    height: 52px;
+    width: 52px;
+  }
+  .HeaderLeftNav > a > svg {
+    margin-top: 14.5px;
+    margin-left: 13.5px;
+    width: 25px;
+  }
+}
+.HeaderFixed:after {
   content: "";
   position: absolute;
   height: 1px;
@@ -20,16 +106,20 @@
   cursor: pointer;
   text-decoration: none;
 }
-.HeaderMenuList li {
+.HeaderMenuList {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.HeaderMenuList li a {
   position: relative;
 }
-.HeaderMenuList li a :hover:after {
+.HeaderMenuList li a span:hover:after {
   content: "";
   position: absolute;
-  height: 4px;
   left: 0;
   width: 100%;
-  top: 34px;
   background: #ffca43;
 }
 
@@ -41,11 +131,7 @@
 }
 .HeaderLogo {
   margin-top: 20px;
-}
-.HeaderMenuList {
-  display: flex;
-  padding-top: 33px;
-  flex: 1;
+  display: inline-block;
 }
 
 .HeaderFlowerClassList {
@@ -53,14 +139,8 @@
 }
 
 .HeaderLeftNav {
-  margin-top: 25px;
-  height: 40px;
-  width: 90px;
 }
-.HeaderLeftNav > a > svg {
-  margin: 5px 7px 0px 7px;
-  width: 25px;
-}
+
 .HeaderProfile {
 }
 
