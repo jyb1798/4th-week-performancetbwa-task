@@ -166,3 +166,39 @@
 .BannerItemMore{
 
 }
+
+.BannerDots{
+    bottom: -30px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding-bottom: 9px;
+    z-index: 100;
+    text-align: center;
+}
+
+.BannerDots button {
+    background: 0 0;
+    background: 0 0;
+    color: inherit;
+    border: none;
+    padding: 0!important;
+    font: inherit;
+}
+
+.BannerDots button span {
+    display: block;
+    width: 8px;
+    height: 8px;
+    margin: 0 4px;
+    background: #e4e4e4;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+}
+
+.BannerDots button .active{
+    background: #f5ca5f;
+}
+
