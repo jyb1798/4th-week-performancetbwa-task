@@ -69,10 +69,18 @@ var firstNode = popUpSlideAnchor[0].cloneNode(true)
 
 popUpSlide.appendChild(firstNode);
 
+// -webkit-transform: translate(;
+// -moz-transform: translate();
+// -ms-transform: translate();
+// -o-transform: translate();
+
 function handleSlideStart() {
   slide = setInterval(function () {
     popUpSlide.style.transition = "transform 1s ease-in-out";
-    popUpSlide.style.transform = "translateX(" + -1 * 360 * slideIndex + "px)";
+    popUpSlide.style.webKitTransform = "translate(" + -1 * 360 * slideIndex + "px)";
+    popUpSlide.style.mozTransform = "translate(" + -1 * 360 * slideIndex + "px)";
+    popUpSlide.style.OTransform = "translate(" + -1 * 360 * slideIndex + "px)";
+    popUpSlide.style.transform = "translate(" + -1 * 360 * slideIndex + "px)";
     Array.from(popUpDot).forEach(function(el){
       el.style.backgroundColor = el.dataset.slideIndex === String(slideIndex) ? 'red':'#bdbdbd' ;
     })
@@ -82,6 +90,10 @@ function handleSlideStart() {
       setTimeout(function () {
         popUpSlide.style.transition = "none";
         popUpSlide.style.transform = "translateX(0px)";
+        popUpSlide.style.webKitTransform = "translate(0px)";
+        popUpSlide.style.mozTransform ="translate(0px)";
+        popUpSlide.style.OTransform = "translate(0px)";
+        popUpSlide.style.transform = "translate(0px)";
         handleSlideStart();
       }, 1000);
       handleSlideStop();
@@ -101,8 +113,10 @@ popUpDot.forEach(function (el) {
   if (el.addEventListener) {
     el.addEventListener("click", function () {
       handleSlideStop();
-      popUpSlide.style.transform =
-        "translateX(" + el.dataset.slideIndex * -1 * 360 + "px)";
+      popUpSlide.style.transform = "translateX(" + el.dataset.slideIndex * -1 * 360 + "px)";
+      popUpSlide.style.webKitTransform = "translate(" + el.dataset.slideIndex * -1 * 360 + "px)";
+      popUpSlide.style.mozTransform = "translate(" + el.dataset.slideIndex * -1 * 360 + "px)";
+      popUpSlide.style.oTransform = "translate(" + el.dataset.slideIndex * -1 * 360 + "px)";
       slideIndex = el.dataset.slideIndex;
       Array.from(popUpDot).forEach(function(el){
         el.style.backgroundColor = el.dataset.slideIndex === String(slideIndex) ? 'red':'#bdbdbd' ;
@@ -112,8 +126,10 @@ popUpDot.forEach(function (el) {
   } else {
     el.attachEvent("onclick", function () {
       handleSlideStop();
-      popUpSlide.style.transform =
-        "translateX(" + el.dataset.slideIndex * -1 * 360 + "px)";
+      popUpSlide.style.transform = "translateX(" + el.dataset.slideIndex * -1 * 360 + "px)";
+      popUpSlide.style.webKitTransform = "translate(" + el.dataset.slideIndex * -1 * 360 + "px)";
+      popUpSlide.style.mozTransform = "translate(" + el.dataset.slideIndex * -1 * 360 + "px)";
+      popUpSlide.style.oTransform = "translate(" + el.dataset.slideIndex * -1 * 360 + "px)";
       slideIndex = el.dataset.slideIndex;
       Array.from(popUpDot).forEach(function(el){
         el.style.backgroundColor = el.dataset.slideIndex === String(slideIndex) ? 'red':'#bdbdbd' ;
