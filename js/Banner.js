@@ -19,6 +19,18 @@ if(windowidth < 750){
         $BannerCloneItems[idx].style.width = (windowidth - 40).toString() +"px";
     }
 
+    if(windowidth < 425){
+        console.log("under425");
+        console.log($BannerItems, $BannerCloneItems);
+        for(var idx = 0; idx < $BannerItems.length; idx++){
+            $BannerItems[idx].style.height = "146px";
+        }
+        var $BannerCloneItems = document.querySelectorAll(".BannerCloneItem");
+        for(var idx = 0; idx < $BannerCloneItems.length; idx++){
+            $BannerCloneItems[idx].style.height = "146px";
+        }
+    }
+
     document.querySelector(".BannerPrev").style.visibility = 'hidden';
     document.querySelector(".BannerNext").style.visibility = 'hidden';
 
@@ -45,7 +57,6 @@ if(windowidth < 750){
             return
         }
         handleprev();
-
     })
 
     $BannerStage.addEventListener("mouseleave", function (e){
@@ -63,7 +74,7 @@ if(windowidth < 750){
 
     function setActiveDots(){
         var dotList = document.querySelectorAll(".BannerDotspan");
-        for(let idx = 0; idx < dotList.length; idx++){
+        for(var idx = 0; idx < dotList.length; idx++){
             if(idx == carouselindex){
                 dotList[idx].style.background = "#f5ca5f";
                 continue
