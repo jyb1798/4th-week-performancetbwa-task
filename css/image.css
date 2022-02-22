@@ -49,6 +49,12 @@
   width: 60%;
 }
 
+.ImageItemContainerFirst,
+.ImageItemContainerSecond {
+  font-size: 17px;
+  line-height: 25px;
+}
+
 .ImageItemTag {
   float: right;
   width: 40%;
@@ -61,8 +67,10 @@
 
 .ImageWrapper .ImageText {
   position: absolute;
-  top: 450px;
-  left: 10px;
+  top: 500px;
+  left: 15px;
+  font-size: 20px;
+  line-height: 30px;
 }
 
 .ImageBtnGroup button {
@@ -104,9 +112,14 @@
 }
 
 .ImageTitle {
-  font-size: 22px;
-  line-height: 34px;
+  font-size: 25px;
+  line-height: 24px;
   font-weight: 300;
+  margin: 10px 0;
+}
+
+.ImageStrong {
+  font-weight: 600;
 }
 
 .ImageItemLine {
