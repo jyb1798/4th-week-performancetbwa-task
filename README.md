@@ -99,7 +99,11 @@ Vanilla JS로 구현하였으며, jQuery는 선택적으로 사용하였습니�
 ```
 $ git clone https://github.com/PreOnboardingTeam-16/4th-week-performancetbwa-task.git
 
-  
+//http-server 없는 경우 코드 추가
+$ npm install -g http-server
+
+$ npx http-server
+	
 ```
 
 <br/>
