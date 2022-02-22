@@ -50,7 +50,7 @@ address {
   width: 100%;
 }
 
-.FooterMobileNav ul li a::before {
+.FooterMobileNav ul li a:before {
   content: "";
   background-image: url(https://kukka-2-media-123.s3.amazonaws.com/static/kukkart_new/img/sprite/kukka.png);
   background-size: 626px 422.5px;
@@ -75,24 +75,24 @@ address {
   margin-top: 5px;
 }
 
-.FooterMobileNav ul > *:first-child a::before {
+.FooterMobileNav ul > *:first-child a:before {
   background-position: -601px -275px;
   width: 17px;
   height: 13px;
   margin-top: 3px;
 }
 
-.FooterMobileNav ul > *:first-child + * a::before {
+.FooterMobileNav ul > *:first-child + * a:before {
   background-position: -601px -246px;
   margin-top: -2px;
 }
 
-.FooterMobileNav ul > *:first-child + * + * a::before {
+.FooterMobileNav ul > *:first-child + * + * a:before {
   background-position: -401px -306px;
   margin-top: -2px;
 }
 
-.FooterMobileNav ul > *:first-child + * + * + * a::before {
+.FooterMobileNav ul > *:first-child + * + * + * a:before {
   background-position: -608px -76px;
   width: 17px;
   height: 19px;
@@ -143,15 +143,15 @@ address {
   /* background-size: 1252px 845px; */
 }
 
-.FooterSns > *:first-child::before {
+.FooterSns > *:first-child:before {
   background-position: -42px -775px;
 }
 
-.FooterSns > *:first-child + *::before {
+.FooterSns > *:first-child + *:before {
   background-position: -1214px -438px;
 }
 
-.FooterSns > *:first-child + * + *::before {
+.FooterSns > *:first-child + * + *:before {
   background-position: -1164px -685px;
 }
 
@@ -239,7 +239,7 @@ address {
   height: 36px;
 }
 
-.FooterAbout::before {
+.FooterAbout:before {
   content: "";
   display: block;
   position: absolute;
@@ -388,15 +388,15 @@ address {
     margin: 10px 0 0 10px;
   }
 
-  .FooterSns > *:first-child::before {
+  .FooterSns > *:first-child:before {
     background-position: -575px -306px;
   }
 
-  .FooterSns > *:first-child + *::before {
+  .FooterSns > *:first-child + *:before {
     background-position: -256px -306px;
   }
 
-  .FooterSns > *:first-child + * + *::before {
+  .FooterSns > *:first-child + * + *:before {
     width: 33px;
     background-position: -218px -306px;
   }
