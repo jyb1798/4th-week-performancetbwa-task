@@ -34,12 +34,10 @@
 
 .ImageContent > .ImageWrapper {
   float: left;
-  border: 2px solid #90c;
 }
 
 .ImageContent > .ImageItemRightSideContainer {
   float: right;
-  border: 2px solid #90c;
   width: 50%;
 }
 
@@ -114,17 +112,6 @@
   width: 95%;
   border-bottom: 1px solid lightgray;
 }
-
-/* .ImageButtonGroup {
-  position: absolute;
-  top: 50%;
-  z-index: 999;
-  display: none;
-  background-color: transparent;
-  border: none;
-  width: 84px;
-  height: 84px;
-} */
 
 .ImagePrevButton {
   position: absolute;
