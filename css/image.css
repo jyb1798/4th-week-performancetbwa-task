@@ -113,6 +113,45 @@
   .ImageBtnGroup button {
     display: none;
   }
+
+  .ImageItemFirst > .ImageItemLine {
+    display: none;
+  }
+
+  .ImagePrevButton .ImageTextRight,
+  .ImageNextButton .ImageTextLeft {
+    font-size: 20px;
+    color: lightgray;
+    display: block;
+  }
+
+  .ImageButtonGroup .ImagePrevButton {
+    position: absolute;
+    top: 50%;
+    left: -20%;
+    border-radius: 100%;
+    box-shadow: 0px 8px 15px rgb(0 0 0 / 10%);
+    cursor: pointer;
+    background-color: transparent;
+    z-index: 999;
+    width: 40px;
+    height: 40px;
+    border-color: transparent;
+  }
+
+  .ImageButtonGroup .ImageNextButton {
+    position: absolute;
+    top: 50%;
+    right: -20%;
+    border-radius: 100%;
+    box-shadow: 0px 8px 15px rgb(0 0 0 / 10%);
+    cursor: pointer;
+    background-color: transparent;
+    z-index: 999;
+    width: 40px;
+    height: 40px;
+    border-color: transparent;
+  }
 }
 
 @media (max-width: 1024px) {
