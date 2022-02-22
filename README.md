@@ -150,12 +150,44 @@ filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='', sizingMethod=
 <br/>
 
 
+#### GNB 크로스 브라우징 이슈
 
+```jsx
+// css/header.css
+
+@media \0screen\ {
+  /* IE8 헤더 스타일*/
+  .HeaderContainer {
+    padding-bottom: 90px;
+	...
+  }
+}
+```
+
+IE9버전까지는 정상적으로 작동했지만 IE8버전에서 CSS 호환이 되지않았고,  헤더 nav태그들을 선택할 수 없었습니다. 그래서 IE8에서만 따로 CSS를 제어하는 방법으로 스타일을 따로 적용시켜주었습니다. 
+
+#### 스크롤 애니메이션 효과
+
+GNB 영역의 header 클릭 시, 해당 영역으로 페이지 내 위치를 이동시키는 기능에서 애니메이션 효과를 적용해야 했습니다. 하지만 scroll-behavior은  IE에서 지원하지 않는 CSS코드였고, JQuery를 통해 해결할 수 있었습니다.
+  ```
+  $('a[href^="#"]').click(function () {
+  var the_id = $(this).attr("href");
+
+  $("html, body").animate(
+    {
+      scrollTop: $(the_id).offset().top - 50,
+    },
+    "slow"
+  );
+  return false;
+});
+  ```
+<br/>
 
 
 ## 프로젝트 후기
 
-🎇김서윤 : 
+🎇김서윤 : 다양한 브라우저에 대한 이해가 필요했던 프로젝트였습니다. 크로스브라우징 과정에서 제가 작성하는 코드의 스타일이 심하게 깨졌고, 이것을 수정하는 과정이 까다롭기도 했지만 흥미로웠습니다.
   
 🎈권영채 : 
   
