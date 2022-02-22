@@ -212,5 +212,7 @@ if(windowidth < 1024){
             BannerDesc[idx].style.color = '#222';
         }
 
+    document.querySelector('.BannerNav').style.display= 'none';
+
 }
 //export default BANNER;
