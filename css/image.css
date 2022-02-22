@@ -60,11 +60,47 @@
   width: 40%;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 768px) {
+  .ImageWrapper {
+    width: 100%;
+  }
+  .ImageContent > .ImageItemRightSideContainer {
+    width: 100%;
+  }
+
+  .ImageWrapper .ImageText {
+    position: absolute;
+    top: 200px;
+    left: 5px;
+  }
+
+  .ImageWrap {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .ImageContent {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .ImageHead .ImageTitle {
+    font-size: 15px;
+    line-height: 10px;
+    font-weight: 300;
+    margin: 10px 0;
+  }
+
   .ImageBtnGroup button {
     display: none;
   }
+}
 
+@media (max-width: 1024px) {
   .ImageItemContainerFirst,
   .ImageItemContainerSecond {
     font-size: 10px;
