@@ -1,6 +1,6 @@
-# 4th-week-performancetbwa-task
+# 크로스 브라우징을 곁들인 플라워 구독 서비스
 
-### [Go Demo🚀]
+### [Go Demo🚀]()
 
 ## Member
 
@@ -17,7 +17,7 @@
 </tr>
 <tr>
 <td>권영채</td>
-<td style="font-size:14px"> Footer / 팝업 </td>
+<td> Footer / 팝업 </td>
 </tr>
 <tr>
 <td>신원규</td>
@@ -61,7 +61,8 @@ Vanilla JS로 구현하였으며, jQuery는 선택적으로 사용하였습니�
 #### Image(플라워클래스)
 
 - 이미지 hover 시 줌 효과
-- 화살표 버튼 선택 시 이미지 자리 교체
+- 왼쪽 큰 영역과 오른쪽 두개의 작은 영역을 화살표 선택 시 돌아갈 수 있도록 구현했습니다.
+- 반응형 웹으로 구현하기 위해 미디어 쿼리를 사용하였습니다.
 
 #### 배너
 
