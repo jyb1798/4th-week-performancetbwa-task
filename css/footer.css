@@ -314,7 +314,7 @@ address {
 }
 
 @media (max-width: 1140px) {
-  .FooterLogo {
+  .FooterInner .FooterLogo {
     display: none;
   }
 }
