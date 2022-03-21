@@ -25,7 +25,7 @@
 </tr>
 <tr>
 <td>김서윤</td>
-<td> PM / GNB / Image</td>
+<td> GNB / Image</td>
 </tr>
 
 </table>
