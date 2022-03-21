@@ -13,7 +13,7 @@
 </tr>
 <tr>
 <td>지연비</td>
-<td style="font-weight:bold"> Image(플라워클래스) / Iframe </td>
+<td style="fontWeight:bold"> Image(플라워클래스) / Iframe </td>
 </tr>
 <tr>
 <td>권영채</td>
