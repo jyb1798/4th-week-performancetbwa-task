@@ -1,31 +1,8 @@
 # 4th-week-performancetbwa-task
 
-### [Go Demo🚀](https://clever-archimedes-f474ab.netlify.app/)
+### [Go Demo🚀]
 
 ## Member
-
-<table>
-<tr>
-<td align="center"><a href="https://github.com/yunred"><img src="https://avatars.githubusercontent.com/u/84527643?v=4" width="90%" /></a></td>
-<td align="center"><a href="https://github.com/zerochae"><img src="https://avatars.githubusercontent.com/u/84373490?v=4" width="90%" /></a></td>
-<td align="center"><a href="https://github.com/WongueShin"><img src="https://media.vlpt.us/images/yeonbee/post/a3b02f02-0826-4cc9-b63e-9ddce5fbd857/wongyu.jpg" width="100%" /></a></td>
-<td align="center"><a href="https://github.com/jyb1798"><img src="https://avatars.githubusercontent.com/u/64634495?s=400&u=3da5cb5a3ff4338da83a58a23df0608da5092ddc&v=4" width="100%" /></a></td>
-</tr>
-<tr>
-<td align="center"><b>김서윤(팀장)</b></td>
-<td align="center"><b>권영채</b></td>
-<td align="center"><b>신원규</b></td>
-<td align="center"><b>지연비</b></td>
-</tr>
-<tr>
-<td align="center"><b>FE Developer</b></td>
-<td align="center"><b>FE Developer</b></td>
-<td align="center"><b>FE Developer</b></td>
-<td align="center"><b>FE Developer</b></td>
-</tr>
-</table>
-
-<br />
 
 ## 역할 분담
 
@@ -35,20 +12,20 @@
 <td align="center"><b>역할</b></td>
 </tr>
 <tr>
-<td>김서윤</td>
-<td> 프로젝트 매니지먼트 / GNB / Image(플라워클래스) </td>
+<td>지연비</td>
+<td style="font-size:16px"> Image(플라워클래스) / Iframe </td>
 </tr>
 <tr>
 <td>권영채</td>
-<td style="font-size:14px"> Footer / 팝업 /</td>
+<td style="font-size:14px"> Footer / 팝업 </td>
 </tr>
 <tr>
 <td>신원규</td>
-<td> 배너 / </td>
+<td> 배너 </td>
 </tr>
 <tr>
-<td>지연비</td>
-<td> Iframe / Image(플라워클래스)</td>
+<td>김서윤</td>
+<td> PM / GNB </td>
 </tr>
 
 </table>
@@ -170,33 +147,3 @@ filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='', sizingMethod=
 ```
 
 IE9버전까지는 정상적으로 작동했지만 IE8버전에서 CSS 호환이 되지않았고, 헤더 nav태그들을 선택할 수 없었습니다. 그래서 IE8에서만 따로 CSS를 제어하는 방법으로 스타일을 따로 적용시켜주었습니다.
-
-#### 스크롤 애니메이션 효과
-
-GNB 영역의 header 클릭 시, 해당 영역으로 페이지 내 위치를 이동시키는 기능에서 애니메이션 효과를 적용해야 했습니다. 하지만 scroll-behavior은 IE에서 지원하지 않는 CSS코드였고, JQuery를 통해 해결할 수 있었습니다.
-
-```
-$('a[href^="#"]').click(function () {
-var the_id = $(this).attr("href");
-
-$("html, body").animate(
-  {
-    scrollTop: $(the_id).offset().top - 50,
-  },
-  "slow"
-);
-return false;
-});
-```
-
-<br/>
-
-## 프로젝트 후기
-
-🎇김서윤 : 다양한 브라우저에 대한 이해가 필요했던 프로젝트였습니다. 크로스브라우징 과정에서 제가 작성하는 코드의 스타일이 심하게 깨졌고, 이것을 수정하는 과정이 까다롭기도 했지만 흥미로웠습니다.
-
-🎈권영채 :
-
-🎹신원규 : IE8 지원을 위해 많은 스타일의 많은부분을 JS 코드로 해결했어야 한 부분이 인상깊었습니다. 특히 폴리필을작성하며 기술적으로 성장할 수 있는 경험을 겪었습니다.
-
-💖지연비 : 크로스브라우징에 대해서 팀원들과 지속적인 커뮤니케이션을 나눴던 부분이 인상적 프로젝트였습니다.
