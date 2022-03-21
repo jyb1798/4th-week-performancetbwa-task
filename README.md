@@ -1,10 +1,10 @@
 # 크로스 브라우징을 곁들인 플라워 구독 서비스
 
-### [Go Demo🚀]()
+## [Go Demo🚀]()
 
 ## Member
 
-## 역할 분담
+### 역할 분담
 
 <table>
 <tr>
@@ -90,13 +90,9 @@ $ npx http-server
 
 <br/>
 
-## 이슈정리
+## ⚡구현 중 기술적 이슈
 
----
-
-### ⚡구현 중 기술적 이슈들
-
-#### addEventListener & attachEvent
+### addEventListener & attachEvent
 
 `IE8` 이하에서는 `addEventListener` 리스너가 동작하지 않았기 때문에, 대신에 `attachEvent`를 사용하였습니다.
 
@@ -109,31 +105,7 @@ $ npx http-server
 attachEvent는 IE의 [Trident Rendering Engines(MSHTML)](https://en.wikipedia.org/wiki/MSHTML) 환경(IE5-8)에서만 동작하며,
 addEventListener는 대부분의 브라우저(IE9 이상,크롬 등)에서 동작하는 W3 표준입니다.
 
-#### NodeList.prototype.forEach
-
-`IE`에서는 NodeList API의 `forEach`가 지원되지 않았습니다. popUp의 슬라이드 구현을 위해서 편의상 `forEach`가 필요했기 때문에 Polyfill을 통해서 forEach를 사용하였습니다.
-
-```js
-if (window.NodeList && !NodeList.prototype.forEach) {
-  NodeList.prototype.forEach = Array.prototype.forEach;
-}
-
-var nodeList = document.querySelector(node);
-nodeList.forEach(function(){...})
-```
-
-#### AlphaImageLoader
-
-`IE8` 이하에서는 CSS property `background-size`를 지원하지 않았습니다. 여기서 [AlphaImageLoader](<https://docs.microsoft.com/en-us/previous-versions/windows/internet-explorer/ie-developer/platform-apis/ms532969(v=vs.85)>)를 이용할 수 있었습니다. 필터를 거친 이미지소스는 `width:100%,height:100%`의 속성을 가지고 변환되었습니다.
-
-```css
-filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='', sizingMethod='scale');
--ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='', sizingMethod='scale')";
-```
-
-<br/>
-
-#### GNB 크로스 브라우징 이슈
+### GNB 크로스 브라우징 이슈
 
 ```jsx
 // css/header.css
