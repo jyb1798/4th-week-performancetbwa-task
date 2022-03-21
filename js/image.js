@@ -12,19 +12,19 @@ var ImagePrevButton = document.querySelector(".ImagePrevButton");
 var FlowerImageList = [
   {
     name: "틴케이스 센터피스(3/7~3/13)",
-    image: "images/MainImage01PC.png",
+    image: "images/1.jpg",
     placeList: ["잠실점", "월계점", "구로점", "송파점", "부산동래점"],
     price: "79,000",
   },
   {
     name: "오아시스 리스(2/23~2/27)",
-    image: "images/SubImage01PC.png",
+    image: "images/2.jpg",
     placeList: ["잠실점", "월계점", "구로점", "송파점", "부산동래점"],
     price: "79,000",
   },
   {
     name: "클래식 핸드타이드(2/28~3/6)",
-    image: "images/SubImage02PC.png",
+    image: "images/3.jpg",
     placeList: ["잠실점", "월계점", "구로점", "송파점", "부산동래점"],
     price: "79,000",
   },
